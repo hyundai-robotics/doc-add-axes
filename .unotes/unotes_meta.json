@@ -1,0 +1,84 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "1-Introduction": {
+      "name": "1-Introduction",
+      "isOrdered": true,
+      "folders": {},
+      "files": {
+        "README": 0
+      }
+    },
+    "2-Presetting": {
+      "name": "2-Presetting",
+      "isOrdered": true,
+      "folders": {},
+      "files": {
+        "README": 0
+      }
+    },
+    "3-Setup": {
+      "name": "3-Setup",
+      "isOrdered": true,
+      "folders": {
+        "1-robottype": {
+          "name": "1-robottype",
+          "isOrdered": true,
+          "folders": {},
+          "files": {
+            "robottype": 0
+          }
+        },
+        "2-parameters": {
+          "name": "2-parameters",
+          "isOrdered": true,
+          "folders": {},
+          "files": {
+            "parameters": 0
+          }
+        },
+        "3-mechanism": {
+          "name": "3-mechanism",
+          "isOrdered": true,
+          "folders": {},
+          "files": {
+            "mechanism": 0
+          }
+        }
+      },
+      "files": {
+        "README": 0
+      }
+    },
+    "4-Teaching-run": {
+      "name": "4-Teaching-run",
+      "isOrdered": true,
+      "folders": {
+        "1-manual": {
+          "name": "1-manual",
+          "isOrdered": true,
+          "folders": {},
+          "files": {
+            "manual": 0
+          }
+        },
+        "2-run": {
+          "name": "2-run",
+          "isOrdered": true,
+          "folders": {},
+          "files": {
+            "run": 0
+          }
+        }
+      },
+      "files": {
+        "README": 0
+      }
+    }
+  },
+  "files": {
+    "SUMMARY": 0,
+    "README": 1
+  }
+}
