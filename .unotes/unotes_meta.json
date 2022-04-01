@@ -75,6 +75,12 @@
       "files": {
         "README": 0
       }
+    },
+    "images": {
+      "name": "images",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
     }
   },
   "files": {
