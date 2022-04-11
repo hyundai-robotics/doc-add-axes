@@ -5,7 +5,7 @@
 
 
 <p align="center">
- <img src="../../images/addaxes.png" width="70%"></img>
+ <img src="../../images/addaxes.PNG" width="70%"></img>
  <em><p align="center">그림 3.4 부가축 파라미터 설정</p></em>
 </p>
 
@@ -59,7 +59,7 @@ IPM 기호를 선택하고 Hall Sensor 사양을 숫자 0-9 로 입력하여 AMP
 
 
 <p align="center">
- <img src="../../images/amp.png" width="70%"></img>
+ <img src="../../images/amp.PNG" width="70%"></img>
  <em><p align="center">그림 3.5 IPM 사양</p></em>
 </p>
 
@@ -67,7 +67,7 @@ IPM 기호와 Hall Sensor 기호에 따라 아래의 정격 용량을 갖습니�
 
 
 <p align="center">
- <img src="../../images/ipm_hall.png" width="70%"></img>
+ <img src="../../images/ipm_hall.PNG" width="70%"></img>
  <em><p align="center">그림 3.6 Hall sensor 사양</p></em>
 </p>
 
