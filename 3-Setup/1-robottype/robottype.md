@@ -1,6 +1,6 @@
 ﻿## 3.1 로봇타입 및 부가축수 설정
 
-(1) 수동모드의 『시스템』 → 『5: 초기화』 → 『2: 로봇타입선택』메뉴에서 사용하고자 하는 로봇타입을 선택합니다.  
+(1) 수동모드의 『시스템』 → 『5: 초기화』 → 『2: 로봇타입선택』 메뉴에서 사용하고자 하는 로봇타입을 선택합니다.  
 
 <p align="center">
  <img src="../../.gitbook/assets/robottype.png" width="70%"></img>
@@ -16,7 +16,7 @@
 (2) 부가축수를 입력하고 『확인』키를 눌러서 제어기를 재부팅합니다.
 
 <p align="center">
- <img src="../../.gitbook/assets/reboot.png" width="70%"></img>
+ <img src="../../.gitbook/assets/reboot.PNG" width="70%"></img>
  <em><p align="center">그림 3.2 제어기 재부팅 안내</p></em>
 </p>
 
