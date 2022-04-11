@@ -5,7 +5,7 @@
 
 
 <p align="center">
- <img src="../../images/addaxes.PNG" width="70%"></img>
+ <img src="../../.gitbook/assets/addaxes.PNG" width="70%"></img>
  <em><p align="center">그림 3.4 부가축 파라미터 설정</p></em>
 </p>
 
