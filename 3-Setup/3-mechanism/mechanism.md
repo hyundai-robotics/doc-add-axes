@@ -4,7 +4,7 @@
 『시스템』 → 『5: 초기화』 → 『6: 메커니즘 설정』을 선택합니다.  
 
 <p align="center">
- <img src="../../.gitbook/assets/mechanism.PNG" width="70%"></img>
+ <img src="../../_assets/mechanism.PNG" width="70%"></img>
  <em><p align="center">그림 3.7 메커니즘 설정</p></em>
 </p>
 
@@ -18,6 +18,6 @@
 부가축 설정이 완료되고 나면 『서비스』 → 『5: 파일관리』에서 USB memory에 프로젝트 파일(hi6_proj.json)을 복사합니다.  
 
 <p align="center">
- <img src="../../.gitbook/assets/project.PNG" width="70%"></img>
+ <img src="../../_assets/project.PNG" width="70%"></img>
  <em><p align="center">그림 3.8 설정 파일 백업</p></em>
 </p>
