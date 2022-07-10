@@ -1,0 +1,52 @@
+﻿[
+	{
+		"link": "README.md",
+		"char_ofs": 0,
+		"byte_ofs": 0
+	},
+	{
+		"link": "1-Introduction/README.md",
+		"char_ofs": 238,
+		"byte_ofs": 494
+	},
+	{
+		"link": "2-Presetting/README.md",
+		"char_ofs": 915,
+		"byte_ofs": 1957
+	},
+	{
+		"link": "3-Setup/README.md",
+		"char_ofs": 1448,
+		"byte_ofs": 2799
+	},
+	{
+		"link": "3-Setup/1-robottype/robottype.md",
+		"char_ofs": 1471,
+		"byte_ofs": 2851
+	},
+	{
+		"link": "3-Setup/2-parameters/parameters.md",
+		"char_ofs": 2262,
+		"byte_ofs": 4123
+	},
+	{
+		"link": "3-Setup/3-mechanism/mechanism.md",
+		"char_ofs": 4537,
+		"byte_ofs": 8469
+	},
+	{
+		"link": "4-Teaching-run/README.md",
+		"char_ofs": 5088,
+		"byte_ofs": 9397
+	},
+	{
+		"link": "4-Teaching-run/1-manual/manual.md",
+		"char_ofs": 5100,
+		"byte_ofs": 9420
+	},
+	{
+		"link": "4-Teaching-run/2-run/run.md",
+		"char_ofs": 5418,
+		"byte_ofs": 10095
+	}
+]

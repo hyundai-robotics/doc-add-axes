@@ -14,4 +14,4 @@
 <br>
 <br>
 
-**Copyright ⓒ 2022 by Hyundai Robotics Co., Ltd**
+**Copyright ⓒ 2022 by Hyundai Robotics**
