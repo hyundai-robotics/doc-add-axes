@@ -8,3 +8,9 @@
 - 직교, 툴 : 로봇 툴끝(TCP) 위치 및 자세고정 주행축 이동 동작 수행
 
 (3)	수동동작 속도( S8기준 ) : 부가축 최고속의 25% (단, 직선최고속 250mm/sec로 제한)  
+
+
+### 참고사항
+부가축의 경우 사용자의 필요에 따라 임의로 장착 되는 제어축이기 때문에 일부 표준품을 제외하면 사전에 튜닝이 되어있지 않습니다.<br>
+부가축의 제어 성능에 문제가 있는 경우 게인 튜닝이 필요합니다. 
+[부가축 자동튜닝](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning)
