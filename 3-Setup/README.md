@@ -1,2 +1,1 @@
-﻿# 3. 로봇타입 및 부가축 정수 등록
-
+﻿# 3. Setup for Robot Type and Additional Axis parameter
