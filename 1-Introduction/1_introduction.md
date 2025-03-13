@@ -1,4 +1,4 @@
-﻿## 1. Introduction
+﻿# 1. Introduction
 
 This section explains the setup for additional axes except the basic robot axes.
 

@@ -5,48 +5,48 @@
 		"byte_ofs": 0
 	},
 	{
-		"link": "1-Introduction/README.md",
+		"link": "1-Introduction/1_introduction.md",
 		"char_ofs": 515,
 		"byte_ofs": 533
 	},
 	{
-		"link": "2-Presetting/README.md",
-		"char_ofs": 2222,
-		"byte_ofs": 2280
+		"link": "2-Presetting/2_presetting.md",
+		"char_ofs": 2224,
+		"byte_ofs": 2282
 	},
 	{
-		"link": "3-Setup/README.md",
-		"char_ofs": 3396,
-		"byte_ofs": 4069
+		"link": "3-Setup/3_setup.md",
+		"char_ofs": 4103,
+		"byte_ofs": 4197
 	},
 	{
 		"link": "3-Setup/1-robottype/robottype.md",
-		"char_ofs": 3452,
-		"byte_ofs": 4129
+		"char_ofs": 4159,
+		"byte_ofs": 4257
 	},
 	{
 		"link": "3-Setup/2-parameters/parameters.md",
-		"char_ofs": 4300,
-		"byte_ofs": 5470
+		"char_ofs": 5333,
+		"byte_ofs": 5473
 	},
 	{
 		"link": "3-Setup/3-mechanism/mechanism.md",
-		"char_ofs": 7085,
-		"byte_ofs": 10621
+		"char_ofs": 11276,
+		"byte_ofs": 11614
 	},
 	{
-		"link": "4-Teaching-run/README.md",
-		"char_ofs": 7636,
-		"byte_ofs": 11549
+		"link": "4-Teaching-run/4_teaching_run.md",
+		"char_ofs": 12059,
+		"byte_ofs": 12448
 	},
 	{
 		"link": "4-Teaching-run/1-manual/manual.md",
-		"char_ofs": 7655,
-		"byte_ofs": 11571
+		"char_ofs": 12079,
+		"byte_ofs": 12472
 	},
 	{
 		"link": "4-Teaching-run/2-run/run.md",
-		"char_ofs": 8254,
-		"byte_ofs": 12711
+		"char_ofs": 13157,
+		"byte_ofs": 13587
 	}
 ]
