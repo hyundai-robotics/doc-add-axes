@@ -31,22 +31,22 @@
 	},
 	{
 		"link": "3-Setup/3-mechanism/mechanism.md",
-		"char_ofs": 11276,
-		"byte_ofs": 11614
+		"char_ofs": 11238,
+		"byte_ofs": 11574
 	},
 	{
 		"link": "4-Teaching-run/4_teaching_run.md",
-		"char_ofs": 12059,
-		"byte_ofs": 12448
+		"char_ofs": 12021,
+		"byte_ofs": 12408
 	},
 	{
 		"link": "4-Teaching-run/1-manual/manual.md",
-		"char_ofs": 12079,
-		"byte_ofs": 12472
+		"char_ofs": 12041,
+		"byte_ofs": 12432
 	},
 	{
 		"link": "4-Teaching-run/2-run/run.md",
-		"char_ofs": 13157,
-		"byte_ofs": 13587
+		"char_ofs": 13119,
+		"byte_ofs": 13547
 	}
 ]

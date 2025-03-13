@@ -110,7 +110,7 @@ To configure the robot type and additional axis parameter setting, the engineer 
  <em><p align="center">Figure 3.4 Additional Axis Parameter Setting</p></em>
 </p>
 
-(2) Configure the additional axis parameter.
+(2) Configure the additional axis parameter.</br>
 (3) Press 『OK』 to complete setting.
 
 </br>
@@ -142,21 +142,19 @@ Base → Servogun→ Positioner → Jig → Sealer
 
 * Allows the user to axis configuration of the additional axis.
 
-<center>
 |Axis Position Information | Setting Value |
-|:---:|:---:|
+|---|---|
 | BD : '1'  | BD640 board number: 1~2  |
 | Axis : '7' | BD640 #1 : 7~8 </br>BD640 #2 : 1~8  |
 
-  ※ If set to '1', '7', the 7th axis on BD640 board #1 is selected.
-</center>
+※ If set to '1', '7', the 7th axis on BD640 board #1 is selected.
 
 (4) Reduction Ratio:
 
 * Enter the movement amount of the additional axis per motor revolution.
-* For linear axes, enter the movement amount of the additional axis per motor revolution in **mm**.
-* For circular axes, enter the movement amount of the additional axis per motor revolution in **deg**.
-* The **sign** is determined based on the positive direction of the motor(the direction in which the encoder value increases).
+* For linear axes, enter the movement amount of the additional axis per motor revolution in mm.
+* For circular axes, enter the movement amount of the additional axis per motor revolution in deg.
+* The sign is determined based on the positive direction of the motor(the direction in which the encoder value increases).
   * If the axis movement direction matches the increasing coordinate value of the additional axis, set it to "+".
   * If the coordinate value decreases instead, set it to "-".
 * Refer to the example below for clarification.
@@ -165,7 +163,7 @@ Base → Servogun→ Positioner → Jig → Sealer
     * The reduction ratio is:
       +360 / 100 [deg/rev]
 * Example 2: If a linear axis uses a 1/20 reduction gear and a rack and pinion with a PCD of 110mm,
-  * Since the axis moves $110\times \pi=345.5749 mm$ for 20 motor revolutions,
+  * Since the axis moves 110xPhi=345.5749 [mm] for 20 motor revolutions,
   * The reduction ratio is:
     +3455749 / 200000 [mm/rev]
 * Example 3: If a linear axis uses a 1/5 reduction gear and a ball screw with a 5mm lead,
