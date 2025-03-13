@@ -15,7 +15,7 @@ This section explains the setup for additional axes except the basic robot axes.
 Prepare the data needed to input the command acceleration/deceleration time for the additional axis (refer to Section 3.2). </br>
 
 * Registration of Robot Type and Additional Axis Parameter  </br>
-After connecting the wire harness between the main unit and the controller, initialize the system, select the robot type, enter the number of additonal axes, and then input the additional axis parameters (Maximum controllable axes: 16, including the robot)  </br>
+After connecting the wire harness between the main unit and the controller, initialize the system, select the robot type, enter the number of additional axes, and then input the additional axis parameters (Maximum controllable axes: 16, including the robot)  </br>
 ※ If the robot type and additional axis parameters have already been registered before shipment, this process can be skipped.  </br>
 
 * Connection and Inspection  </br>

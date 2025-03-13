@@ -1,23 +1,23 @@
-﻿## 3.3 메카니즘 설정
+﻿# 3.3 Mechanism Setting
 
-(1)	메커니즘 설정  
-『시스템』 → 『5: 초기화』 → 『6: 메커니즘 설정』을 선택합니다.  
+(1) Mechanism setting
+
+* Navigate to 『System』 → 『5: Initialization』 → 『6: Mechanism Setting』.
 
 <p align="center">
  <img src="../../_assets/mechanism.PNG" width="70%"></img>
- <em><p align="center">그림 3.7 메커니즘 설정</p></em>
+ <em><p align="center">Figure 3.7 Mechanism Setting</p></em>
 </p>
 
+* The additional axis must have a mechanism group set in order to assign the jog key for manual mode. Robot axes are fixed to Mechanism M0. Additional axis can be classified from Mechanism M1 to M7.
 
-부가축은 수동 조작시 메커니즘 그룹에 따라 조그키를 할당하기 위해 메커니즘 그룹을 설정해야 합니다. 로봇축은 메커니즘 M0으로 고정되어 있으며, 부가축은 메커니즘 M1~M7로 분류하여 선택합니다.  
+</br>
 
+(2) Parameter File Backup
 
-<br/>
-
-(2)	정수 파일 백업  
-부가축 설정이 완료되고 나면 『서비스』 → 『5: 파일관리』에서 USB memory에 프로젝트 파일(hi6_proj.json)을 복사합니다.  
+* After completing the additional axis settings, copy the project file (hi6_proj.json) to a USB memory from 『Service』 → 『5: File manager』.
 
 <p align="center">
  <img src="../../_assets/project.PNG" width="70%"></img>
- <em><p align="center">그림 3.8 설정 파일 백업</p></em>
+ <em><p align="center">Figure 3.8 Setting File Backup</p></em>
 </p>

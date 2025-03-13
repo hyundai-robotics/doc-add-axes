@@ -1,89 +1,133 @@
-﻿## 3.2 부가축 정수 설정
+﻿# 3.2 Additional Axis Parameter Setting
 
-
-(1)	아래와 같은 『부가축 정수 설정』화면을 확인합니다.
-
+(1) Check the 『Additional axis parameter setting』 screen as shown below.
 
 <p align="center">
  <img src="../../_assets/addaxes.PNG" width="70%"></img>
- <em><p align="center">그림 3.4 부가축 파라미터 설정</p></em>
+ <em><p align="center">Figure 3.4 Additional Axis Parameter Setting</p></em>
 </p>
 
+(2) Configure the additional axis parameter.
+(3) Press 『OK』 to complete setting.
 
-(2)	부가축 정수를 설정합니다.  
-(3)	입력 종료는 『OK』키를 누릅니다. 
-
-
-<br/>
+</br>
 
 ---
 
-**【부가축 정수】**
+## **【Additional Axis Parameter】**
 
-(1)	축 사양 : 부가축 종류를 <베이스, 서보건, 포지셔너, 지그, 실러> 중에서 선택합니다.  
-부가축 사양을 결정할때는 논리적인 부가축 순서에 따라 베이스 → 서보건 → 포지셔너 → 지그 → 실러 순을 지켜야합니다.  
+(1) Axis specification
 
-(2)	축 구성 : 축의 동작형태와 방향을 선택합니다.  
-직동 베이스축(주행축)인 경우는 전/후축 주행이면 X, 좌/우축 주행이면 Y로, 상/하축 주행이면 Z로 선택합니다. <br>
-베이스축이 로봇 좌표계와 동일한 방향으로 설치되지 않은 경우는 <임의>로 선택하고 『베이스축 캘리브레이션』을 실행합니다. <br>
-회전 베이스축도 직동 베이스축과 같이 Rx/Ry/Rz를 선택하거나 <임의>로 선택하여 『베이스축 캘리브레이션』을 실행합니다. <br>
-축 사양을 <지그>나 <실러>로 선택한 경우에는 제어모드를 <위치제어>나 <속도제어>중에서 선택할 수 있으며 속도제어인 경우는 모터속도 지령에 따라 모터가 회전합니다.<br>  
-서보건을 설정하는 경우는 『[스폿용접 기능설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/2-servo-gun-initial-setting/README)』, 포지셔너를 사용하는 경우는 『[포지셔너동기 기능설명서](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/korean/README)』를 참조하십시오.
+* Select the type of additional axis form the following options:
+Base, Servogun, Positioner, Jig, Sealer
+* When determining the additional axis specification, follow the logical order:
+Base → Servogun→ Positioner → Jig → Sealer
 
-(3)	축 위치 : 부가축의 물리적인 구성을 사용자가 지정하여 사용할수 있도록 합니다.
+(2) Axis structure: Select the motion type and direction of the additional axis.
+
+* For linear base axes(moving axes):
+  * X-axis: Forward/Backward movement
+  * Y-axis: Left/Right movement
+  * Z-axis: Up/Down movement
+* If the base axis is not installed in the same direction as the robot coordinate system, select "Any" and do "Base axis calibration".
+* Like linear base axes, circular base axes can also be set to Rx/Ry/Rz or selected as "Any" and do "Base axis calibration".
+* For "Jig" or "Sealer", the control mode can be selected as either "position control" or "speed control". In speed control mode, the motor rotates according to the motor speed command.
+* For "Servogun", refer to the 『[Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/2-servo-gun-initial-setting/README)』.
+* For "Positioner", refer to the 『[Positioner Synchronization Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/english/README)』
+
+(3) Axis position:
+
+* Allows the user to axis configuration of the additional axis.
 
 <center>
-
-|축위치 정보 |설정값 |
+|Axis Position Information | Setting Value |
 |:---:|:---:|
-| BD : '1'  | BD640보드 번호 : 1~2  |
+| BD : '1'  | BD640 board number: 1~2  |
 | Axis : '7' | BD640 #1 : 7~8 </br>BD640 #2 : 1~8  |
 
-  ※ '1', '7' 로 설정하였다면, BD640 1번의 7번째 축으로 설정됨  
+  ※ If set to '1', '7', the 7th axis on BD640 board #1 is selected.
 </center>
 
-(4) 감속비 : 모터 회전수당 축의 이동량을 등록합니다.  
-직동축은 모터 회전수당 축 이동거리를 mm로, 회전축은 모터 회전수당 축 회전각도를 deg로 등록합니다. <br>
-부호는 모터의 정방향(엔코더가 증가하는 방향)이 축 동작방향과 일치하여 부가축 좌표치가 증가하면 “+”이고, 반대로 좌표치가 감소한다면 “-“로 정합니다. <br>
-아래 예시를 참고하십시오.  
+(4) Reduction Ratio:
 
-- 예 1) 1/100감속기만 사용하는 회전축이라면,  
-모터 100회전에 축이 360deg회전하므로,  
-감속비 = + 360 / 100 [deg/rev]  
-- 예 2) 1/20감속기와 PCD 110mm인 랙피니언을 사용하는 직동축이라면,  
-모터 20회전에 110xPhi(=3.14159)=345.5749[mm]를 이동하므로,  
-감속비 = + 3455749 /200000 [mm/rev]  
-- 예 3) 1/5 감속기와 Lead 5mm인 볼스크류를 사용하는 직동축이라면,  
-모터 5회전에 축이 5mm이동하므로,  
-감속비 = + 5 / 5 [mm/rev]  
+* Enter the movement amount of the additional axis per motor revolution.
+* For linear axes, enter the movement amount of the additional axis per motor revolution in **mm**.
+* For circular axes, enter the movement amount of the additional axis per motor revolution in **deg**.
+* The **sign** is determined based on the positive direction of the motor(the direction in which the encoder value increases).
+  * If the axis movement direction matches the increasing coordinate value of the additional axis, set it to "+".
+  * If the coordinate value decreases instead, set it to "-".
+* Refer to the example below for clarification.
+* Example 1: If a circular axis uses only a 1/100 reduction gear.
+  * Since the axis rotates 360 degrees for 100 motor revolutions,
+    * The reduction ratio is:
+      +360 / 100 [deg/rev]
+* Example 2: If a linear axis uses a 1/20 reduction gear and a rack and pinion with a PCD of 110mm,
+  * Since the axis moves $110\times \pi=345.5749 mm$ for 20 motor revolutions,
+  * The reduction ratio is:
+    +3455749 / 200000 [mm/rev]
+* Example 3: If a linear axis uses a 1/5 reduction gear and a ball screw with a 5mm lead,
+  * Since the axis moves 5mm for 5motor revolutions,
+  * The reduction ratio is:
+    +5 / 5 [mm/rev]
 
-(5)	소프트리밋 : 로봇 유효동작영역(부가축 소프트 리미트)을 설정합니다. <br>
-직동축은 [mm]로 회전축은 [deg]로 설정하며 『시스템』 → 『3: 로봇 파라미터』 → 『3: 소프트웨어 리미트』에 설정값이 반영됩니다.  
+(5) Soft limit:
 
-(6)	AMP 사양 : 부가축에 사용할 AMP의 사양을 선택합니다.  
-IPM 기호를 선택하고 Hall Sensor 사양을 숫자 0-9 로 입력하여 AMP 사양을 선택합니다. AMP의 형식 사양은 다음과 같습니다.  
+* Sets the effective operating range of additional axis
+* For linear axes, set in millimeters [mm].
+* For circular axes, set in degrees [deg].
+* The values are applied in 『System』 → 『3:Robot parameter』 → 『3: Software limit』.
 
+(6) AMP Specifications:
 
-<p align="center">
- <img src="../../_assets/amp.PNG" width="60%"></img>
- <em><p align="center">그림 3.5 IPM 사양</p></em>
-</p>
+* Select the AMP specifications to be used for the additional axis.
+* Choose the IPM symbol and enter the Hall Sensor specifications as a number between 0-9 to specify the AMP type. The AMP specification format is as follows:
 
-IPM 기호와 Hall Sensor 기호에 따라 아래의 정격 용량을 갖습니다.  
+  <center>
 
+  |IPM Capacity | Description |
+  |:---:|:---:|
+  |(medium) L  | (IPM current rating) 150A, (Hall Sensor current rating) 4V/75A |
+  |(medium) X  | (IPM current rating) 100A, (Hall Sensor current rating) 4V/50A |
+  |(medium) Y  | (IPM current rating) 750A, (Hall Sensor current rating) 4V/50A |
+  |(medium) Z  | (IPM current rating) 50A, (Hall Sensor current rating) 4V/25A |
+  |(small) A  | (IPM current rating) 30A, (Hall Sensor current rating) 4V/15A |
+  |(small) D  | (IPM current rating) 10A, (Hall Sensor current rating) 4V/5A |
 
-<p align="center">
- <img src="../../_assets/ipm_hall.PNG" width="60%"></img>
- <em><p align="center">그림 3.6 Hall sensor 사양</p></em>
-</p>
+  </center>
 
-(7)	Motor 사양 : 부가축에 사용되는 모터 사양을 선택합니다.  
-모터의 용량을 먼저 선택하고, 모터 사양을 선택합니다.  
-모터의 세부 속성값 중 일부에서 사소한 변경이 있는 경우, 동일한 모터 형번에 rev 번호가 추가되는 경우가 있습니다. <br>
-이 경우 rev 번호가 가장 높은 최신 모터정보를 선택 하시기를 권장 합니다. </br>
-Ex> TSM3563N7020E731, TSM3563N7020E731_R1, TSM3563N7020E731_R2 중 TSM3563N7020E731_R2 모터를 선택 
+* The rated capacity is determined by the IPM symbol and hall Sensor symbol.
 
-(8)	가감속 파라미터 : 부가축의 최고속과 가속시간을 설정합니다.  
-여기서 설정한 값은 『시스템』 → 『3: 로봇 파라미터』 → 『34: 가감속 파라미터』에 설정하는 것과 동일하게 적용됩니다. <br>
-부가축의 최고속을 사용자가 지정하지만, 모터 정격속도에 따라 제한됩니다. <br>
-부가축 동작중 진동이 발생하면 가속시간을 조정해야 합니다.  
+  <center>
+
+  |AMP Model | Code | Hall Sensor Specification| Full Scale Current (Im) |
+  |:---:|:---:|:---:|:---:|
+  |medium  | 0 | 4V/75A  |  140.62A|
+  |medium  | 1 | 4V/50A  |  93.75A |
+  |medium  | 2 | 4V/25A  |  46.87A |
+  |medium  | 3 | 4V/15A  |  28.12A |
+  |medium  | 4 | 4V/10A  |  18.75A |
+  |medium  | 5 | 4V/5A   |  9.37A  |
+  |small   | 3 | 4V/15A  |  27.27A |
+  |small   | 4 | 4V/10A  |  18.18A |
+  |small   | 5 | 4V/5A   |  9.19A  |
+  |small   | 6 | 4V/3A   |  5.45A  |
+  |small   | 7 | 4V/6A   |  10.91A |
+  |small   | 8 | 4V/2A   |  3.64A  |
+  |small   | 9 | 4V/1A   |  1.82A  |
+
+</center>
+
+(7) Motor Specifications:
+
+* Select the motor specifications used for the additional axis.
+* First, choose the motor capacity, then select the motor specification.
+* If there are minor modifications to certain motor attributes, a revision number (rev) may be added to the motor model number. In such cases, it is recommended to select the latest motor version with the highest revision number.
+  * Example:
+    Among TSM3563N7020E731, TSM3563N7020E731_R1, and TSM3563N7020E731_R2, it is recommended to select TSM3563N7020E731_R2.
+
+(8) Acceleration/Deceleration Parameters:
+
+* Set the maximum speed and acceleration time for the additional axis.
+* The values set here are applied in 『System』 → 『3: Robot parameter』 → 『34: Accel and decel parameter』.
+* While the maximum speed of the additional axis can be specified by the user, it is limited by the motor's rated speed.
+* If vibration occurs during additional axis operation, the acceleration time should be adjusted accordingly.

@@ -1,14 +1,16 @@
-﻿# 4.2 Run
+﻿## 4.2 Run
 
-(1)	보간 Off
-각축별 목표점 동시 도달 합니다.
+(1) Interpolation Off</br>
+Each axis reaches its target point simultaneously.
 
-(2)	직선보간
-로봇 툴끝(TCP)이 직선보간(궤적,자세유지) 동작이 이루어 집니다. <br>
-베이스축은 로봇과 연동하여 움직이면서 툴끝이 직선보간을 이루도록합니다. <br>
-그 이외의 부가축은 로봇 툴끝과 관련이 없으나 목표점에 동시 도달합니다. <br>
+(2) Linear Interpolation</br>
+The robot tool center point(TCP) moves with linear interpolation, maintaining its trajectory and orientation.
 
-(3)	원호보간
-로봇 툴끝(TCP)이 직선보간(궤적,자세유지) 동작이 이루어 집니다. <br>
-베이스축은 로봇과 연동하여 움직이면서 툴끝이 직선보간을 이루도록합니다. <br>
-그 이외의 부가축은 로봇 툴끝과 관련이 없으나 목표점에 동시 도달합니다. <br>
+* The base axis moves in synchronization with the robot to ensure linear interpolation of the TCP.
+* Other additional axes are not related to the robot TCP but reach their target points simultaneously.
+
+(3) Circular Interpolation</br>
+The robot tool center point(TCP) moves with circular interpolation, maintaining its trajectory and orientation.
+
+* The base axis moves in synchronization with the robot to ensure circular interpolation of the TCP.
+* Other additional axes are not related to the robot TCP, but reach their target positions simultaneously.

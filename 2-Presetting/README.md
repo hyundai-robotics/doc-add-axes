@@ -1,32 +1,33 @@
 ﻿# 2. Presetting
 
-* 접속할 부품 및 자재들을 확인합니다.
-* 미리 계산해 둔 데이터나 선정된 부가축 정보 등이 준비되었는지 확인합니다.
-(감속비, AMP 사양, Motot 사양, 최고속, 가속시간 등)
-* 축수에 따른 BD640와 AMP의 조합은 다음과 같습니다.
+* Check the components and materials to be connected.
+* Ensure that the pre-calculated data and selected additional axis information are prepared.
+(Reduction ratio, AMP specifications, motor specifications, maximum speed, acceleration time, etc.)
+* The combination of BD640 and AMP according to the number of additional axes is as follows.
 
-  | 축 구성 | BD/AMP 구성 |
+  | Axis Configuration | BD/AMP Configuration |
   | :------------------: | :-------------------: |
-    | 1축 \~ 6축</br>(기본6축) | BD640 1개</br>6축 AMP 1개 |
-  | 7축 \~ 8축</br>(기본6축 + 부가2축) | BD640 1개</br>6축 AMP 1개</br>1축 AMP 1~2개 |
-  | 9축 ~ 12축</br>(기본6축 + 부가6축) | BD640 2개</br>6축 AMP 2개 |
-  | 13축 ~ 16축</br>(기본6축 + 부가12축) | BD640 2개</br>6축 AMP 2개</br>1축 AMP 1~4개 |
+    | 1 to 6 axes</br>(basically 6 axes) | 1 BD640</br>1 AMP(6-axis type) |
+  | 7 to 8 axes</br>(basically 6 axes + 2 additional axes) | 1 BD640</br>1 AMP(6-axis type)</br>1 to 2 AMPs(1-axis type) |
+  | 9 to 12 axes</br>(basically 6 axes + 6 additional axes) | 2 BD640</br> 2 AMP(6-axis type) |
+  | 13 to 16 axes</br>(basically 6 axes + 12 additional axes) | 2 BD640</br>2 AMP(6-axis type)</br>1 to 4 AMPs(1-axis type) |
 
 </br>
 
-* 축수에 따라서 인터페이스 보드(BD6H0)의 딥스위치 설정이 필요합니다.
+* DIP switch settings for interface board (BD6H0) Based on the number of additional axes.
 
   <div align="left">
 
-  | 명칭 | 용도 | 설정방법|
+  | Name | Purpose | Setting|
   | :------------------: | :-------------------: | :-------------------: |
-  | SW1 | SSM1(BD640 1번 보드) 연결 시, 설정하는 스위치 | SSM1 연결 시: 1/2/3/4 스위치 OFF </br> 사용하지 않을 시: 1/2/3/4 스위치 ON |
-  | SW2 | SSM1(BD640 2번 보드) 연결 시, 설정하는 스위치 | SSM2 연결 시: 1/2/3/4 스위치 OFF </br> 사용하지 않을 시: 1/2/3/4 스위치 ON |
-  | SW3 | SSM1(BD640 3번 보드) 연결 시, 설정하는 스위치 | SSM3 연결 시: 1/2/3/4 스위치 OFF </br> 사용하지 않을 시: 1/2/3/4 스위치 ON |
-  | SW4 | SSM1(BD640 4번 보드) 연결 시, 설정하는 스위치 | SSM4 연결 시: 1/2/3/4 스위치 OFF </br> 사용하지 않을 시: 1/2/3/4 스위치 ON |
+  | SW1 | Switch for configuring SSM1 (BD640 Board 1) | When SSM1 is connected: Switches 1/2/3/4 OFF </br> When SSM1 is disconnected: Switches 1/2/3/4 ON |
+  | SW2 | Switch for configuring SSM2 (BD640 Board 2) | When SSM2 is connected: Switches 1/2/3/4 OFF </br> When SSM2 is disconnected: Switches 1/2/3/4 ON |
+  | SW3 | Switch for configuring SSM3 (BD640 Board 3) | When SSM3 is connected: Switches 1/2/3/4 OFF </br> When SSM3 is disconnected: Switches 1/2/3/4 ON |
+  | SW4 | Switch for configuring SSM4 (BD640 Board 4) | When SSM4 is connected: Switches 1/2/3/4 OFF </br> When SSM4 is disconnected: Switches 1/2/3/4 ON |
 
   </div>
 
 {% hint style="info" %}
- BD640 1 대당 8축 제어 가능, AMP 2종 (6축용, 1축용)
+Each BD640 can control up to 8 axes, with two types of AMPs available (6-axis type and 1-axis type).
+
 {% endhint %}

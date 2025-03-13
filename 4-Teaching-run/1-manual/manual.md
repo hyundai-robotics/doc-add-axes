@@ -1,20 +1,22 @@
-﻿## 4.1 Manual Mode (Jog)
+﻿# 4.1 Manual Mode (Jog)
+
+(1) Pressing the [Mechanism] key at the top of the TP screen will change mechanism status to 1. it can be allow manual operation for Mechanism Group 1.
+
+(2) Additional axis manual operation moves each axis individually, regardless of the coordinate system. However, for moving axes, movement depends on the selected coordinate system:
+
+* Axis: Moves the moving axis individually in the set axis direction.
+* Cartesian/Tool: The robot TCP position and orientation are fixed while moving axis moves.
+
+(3) Manual operation speed (based on S8): 25% of the additional axis maximum speed (however, linear speed is limited to 250mm/sec)
+
+</br>
+</br>
+</br>
+
+## 참고사항
+
+In the case of additional axes, they are installed arbitrarily based on user requirements. Therefore, They are not pre-tuned except for som standard models.
+
+If there are issues with the control performance of an additional axis, [Additional axis autotuning](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning) is required.
 
 
-(1)	T/P상의 [메커니즘]키를 누르면 T/P상단의 상태표시창의 메커니즘 상태가 [1]로 표시되면서 메커니즘 그룹 1번에 대한 수동 조작이 가능해집니다.
-
-(2)	부가축 수동조작은 좌표계에 관계없이 개별축 동작을 합니다. 다만, 주행축 은 좌표계 선택에 따라 다음과 같이 동작합니다.  
-- 축 : 주행축 개별동작(설정된 축 방향으로 이동)  
-- 직교, 툴 : 로봇 툴끝(TCP) 위치 및 자세고정 주행축 이동 동작 수행
-
-(3)	수동동작 속도( S8기준 ) : 부가축 최고속의 25% (단, 직선최고속 250mm/sec로 제한)  
-
-
-<br>
-<br>
-<br>
-
-### 참고사항
-부가축의 경우 사용자의 필요에 따라 임의로 장착 되는 제어축이기 때문에 일부 표준품을 제외하면 사전에 튜닝이 되어있지 않습니다.<br>
-부가축의 제어 성능에 문제가 있는 경우 게인 튜닝이 필요합니다. </br>
-[부가축 자동튜닝](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning)
