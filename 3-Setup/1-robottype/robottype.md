@@ -1,4 +1,4 @@
-﻿# 3.1 Setting up Robot Type and Number of Additional Axes
+﻿## 3.1 Setting up Robot Type and Number of Additional Axes
 
 The additional axis is set up in the following order:
 

@@ -1,4 +1,4 @@
-﻿# 3.3 Mechanism Setting
+﻿## 3.3 Mechanism Setting
 
 (1) Mechanism setting
 

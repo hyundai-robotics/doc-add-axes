@@ -1,4 +1,4 @@
-﻿# 3.2 Additional Axis Parameter Setting
+﻿## 3.2 Additional Axis Parameter Setting
 
 (1) Check the 『Additional axis parameter setting』 screen as shown below.
 
@@ -14,7 +14,7 @@
 
 ---
 
-## **【Additional Axis Parameter】**
+**【Additional Axis Parameter】**
 
 (1) Axis specification
 

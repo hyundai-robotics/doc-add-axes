@@ -1,4 +1,4 @@
-﻿# 4.1 Manual Mode (Jog)
+﻿## 4.1 Manual Mode (Jog)
 
 (1) Pressing the [Mechanism] key at the top of the TP screen will change mechanism status to 1. it can be allow manual operation for Mechanism Group 1.
 
@@ -13,7 +13,7 @@
 </br>
 </br>
 
-## 참고사항
+**ℹ️ 참고사항**
 
 In the case of additional axes, they are installed arbitrarily based on user requirements. Therefore, They are not pre-tuned except for som standard models.
 
