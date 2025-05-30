@@ -17,4 +17,5 @@
 ### 참고사항
 부가축의 경우 사용자의 필요에 따라 임의로 장착 되는 제어축이기 때문에 일부 표준품을 제외하면 사전에 튜닝이 되어있지 않습니다.<br>
 부가축의 제어 성능에 문제가 있는 경우 게인 튜닝이 필요합니다. </br>
-[부가축 자동튜닝](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning)
+[부가축 자동튜닝](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning)<br>
+만약 부가축 자동튜닝이 원활히 동작되지 않는 경우, (https://github.com/hyundai-robotics/doc-add-axes/tree/korean/5-Manual-Tuning)를 활용하시면 됩니다.
