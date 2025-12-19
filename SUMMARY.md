@@ -1,6 +1,6 @@
 ﻿# 목 차
 
-* [Hi6 로봇제어기 기능설명서 - 부가축](README.md)
+* [${cont_model} 로봇제어기 기능설명서 - 부가축](README.md)
 * [1. 개요](1-Introduction/README.md)
 * [2. 준비작업](2-Presetting/README.md)
 * [3. 로봇타입 및 부가축 정수 등록](3-Setup/README.md)
