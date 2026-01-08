@@ -26,6 +26,10 @@
   | SW4 | SSM1(BD640 4번 보드) 연결 시, 설정하는 스위치 | SSM4 연결 시: 1/2/3/4 스위치 OFF </br> 사용하지 않을 시: 1/2/3/4 스위치 ON |
 
   </div>
+<p align="center">
+  <img src="../_assets/2_1_dip_switch_example.jpg" width="500">
+  <em><p align="center">그림 2.1 딥스위치 설정 예시 (SSM1 연결)</p></em>
+</p>
 
 {% hint style="info" %}
  BD640 1 대당 8축 제어 가능, AMP 2종 (6축용, 1축용)
