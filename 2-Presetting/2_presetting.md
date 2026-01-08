@@ -15,7 +15,6 @@
 </br>
 
 * DIP switch settings for interface board (BD6H0) Based on the number of additional axes.
-
   <div align="left">
 
   | Name | Purpose | Setting|
@@ -25,6 +24,10 @@
   | SW3 | Switch for configuring SSM3 (BD640 Board 3) | When SSM3 is connected: Switches 1/2/3/4 OFF </br> When SSM3 is disconnected: Switches 1/2/3/4 ON |
   | SW4 | Switch for configuring SSM4 (BD640 Board 4) | When SSM4 is connected: Switches 1/2/3/4 OFF </br> When SSM4 is disconnected: Switches 1/2/3/4 ON |
 
+<p align="center">
+  <img src="../_assets/2_1_dip_switch_example.jpg" width="500">
+  <em><p align="center">Figure 2.1 DIP switch example (SSM1 connected)</p></em>
+</p>
   </div>
 
 {% hint style="info" %}
