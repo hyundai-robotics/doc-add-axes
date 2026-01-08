@@ -16,37 +16,37 @@
 	},
 	{
 		"link": "3-Setup/3_setup.md",
-		"char_ofs": 4103,
-		"byte_ofs": 4197
+		"char_ofs": 4270,
+		"byte_ofs": 4367
 	},
 	{
 		"link": "3-Setup/1-robottype/robottype.md",
-		"char_ofs": 4159,
-		"byte_ofs": 4257
+		"char_ofs": 4326,
+		"byte_ofs": 4427
 	},
 	{
 		"link": "3-Setup/2-parameters/parameters.md",
-		"char_ofs": 5333,
-		"byte_ofs": 5473
+		"char_ofs": 5500,
+		"byte_ofs": 5643
 	},
 	{
 		"link": "3-Setup/3-mechanism/mechanism.md",
-		"char_ofs": 11238,
-		"byte_ofs": 11574
+		"char_ofs": 11405,
+		"byte_ofs": 11744
 	},
 	{
 		"link": "4-Teaching-run/4_teaching_run.md",
-		"char_ofs": 12021,
-		"byte_ofs": 12408
+		"char_ofs": 12188,
+		"byte_ofs": 12578
 	},
 	{
 		"link": "4-Teaching-run/1-manual/manual.md",
-		"char_ofs": 12041,
-		"byte_ofs": 12432
+		"char_ofs": 12208,
+		"byte_ofs": 12602
 	},
 	{
 		"link": "4-Teaching-run/2-run/run.md",
-		"char_ofs": 13119,
-		"byte_ofs": 13547
+		"char_ofs": 13286,
+		"byte_ofs": 13717
 	}
 ]
