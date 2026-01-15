@@ -16,7 +16,7 @@ Prepare the data needed to input the command acceleration/deceleration time for 
 
 * Registration of Robot Type and Additional Axis Parameter  </br>
 After connecting the wire harness between the main unit and the controller, initialize the system, select the robot type, enter the number of additional axes, and then input the additional axis parameters (Maximum controllable axes: 16, including the robot)  </br>
-※ If the robot type and additional axis parameters have already been registered before shipment, this process can be skipped.  </br>
+* If the robot type and additional axis parameters have already been registered before shipment, this process can be skipped.  </br>
 
 * Connection and Inspection  </br>
 Turn off the controller → Connect the necessary wires between the main unit and the controller → Turn on the controller → Set encoder calibration and the reference position (axis parameters) for the servo system.  </br>

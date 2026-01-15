@@ -1,16 +1,8 @@
-﻿# Hi6 Robot Controller Operation Manual - Additional axes
+﻿
+[__SOURCE](README.md)
+# ${cont_model} Controller Operation Manual - Additional axes
 
-{% hint style="warning" %}
-The information presented in this manual is the property of Hyundai Robotics.
-
-The manual may neither be copied, in part or in full, nor redistributed without prior written consent from Hyundai Robotics.
-
-It may neither be provided to any third party nor used for any other purposes.
-
-Hyundai Robotics reserves the right to modify this document without prior notification.
-
-**Copyright ⓒ 2022 by Hyundai Robotics**
-{% endhint %}
+[__SOURCE](1-Introduction/1_introduction.md)
 # 1. Introduction
 
 This section explains the setup for additional axes except the basic robot axes.
@@ -29,13 +21,15 @@ Prepare the data needed to input the command acceleration/deceleration time for 
 
 * Registration of Robot Type and Additional Axis Parameter  </br>
 After connecting the wire harness between the main unit and the controller, initialize the system, select the robot type, enter the number of additional axes, and then input the additional axis parameters (Maximum controllable axes: 16, including the robot)  </br>
-※ If the robot type and additional axis parameters have already been registered before shipment, this process can be skipped.  </br>
+* If the robot type and additional axis parameters have already been registered before shipment, this process can be skipped.  </br>
 
 * Connection and Inspection  </br>
 Turn off the controller → Connect the necessary wires between the main unit and the controller → Turn on the controller → Set encoder calibration and the reference position (axis parameters) for the servo system.  </br>
 
 * Completion  </br>
 After configuring the additional axis operating environment, save the hi6_proj.json file to an external storage device (USB memory).
+
+[__SOURCE](2-Presetting/2_presetting.md)
 # 2. Presetting
 
 * Check the components and materials to be connected.
@@ -72,7 +66,11 @@ After configuring the additional axis operating environment, save the hi6_proj.j
 Each BD640 can control up to 8 axes, with two types of AMPs available (6-axis type and 1-axis type).
 
 {% endhint %}
+
+[__SOURCE](3-Setup/3_setup.md)
 # 3. Setup for Robot Type and Additional Axis parameter
+
+[__SOURCE](3-Setup/1-robottype/robottype.md)
 ## 3.1 Setting up Robot Type and Number of Additional Axes
 
 The additional axis is set up in the following order:
@@ -104,6 +102,8 @@ To configure the robot type and additional axis parameter setting, the engineer 
  <img src="../../_assets/addaxes_menu.PNG" width="70%"></img>
  <em><p align="center">Figure 3.3 Additional Axis Parameter Setting Menu</p></em>
 </p>
+
+[__SOURCE](3-Setup/2-parameters/parameters.md)
 ## 3.2 Additional Axis Parameter Setting
 
 (1) Check the 『Additional axis parameter setting』 screen as shown below.
@@ -150,7 +150,7 @@ Base → Servogun→ Positioner → Jig → Sealer
 | BD : '1'  | BD640 board number: 1~2  |
 | Axis : '7' | BD640 #1 : 7~8 </br>BD640 #2 : 1~8  |
 
-※ If set to '1', '7', the 7th axis on BD640 board #1 is selected.
+* If set to '1', '7', the 7th axis on BD640 board #1 is selected.
 
 (4) Reduction Ratio:
 
@@ -235,6 +235,8 @@ Base → Servogun→ Positioner → Jig → Sealer
 * The values set here are applied in 『System』 → 『3: Robot parameter』 → 『34: Accel and decel parameter』.
 * While the maximum speed of the additional axis can be specified by the user, it is limited by the motor's rated speed.
 * If vibration occurs during additional axis operation, the acceleration time should be adjusted accordingly.
+
+[__SOURCE](3-Setup/3-mechanism/mechanism.md)
 ## 3.3 Mechanism Setting
 
 (1) Mechanism setting
@@ -257,7 +259,11 @@ Base → Servogun→ Positioner → Jig → Sealer
 <p align="center">
  <img src="../../_assets/project.PNG" width="70%"></img>
  <em><p align="center">Figure 3.8 Setting File Backup</p></em>
-</p># 4. Teaching & Run
+</p>
+[__SOURCE](4-Teaching-run/4_teaching_run.md)
+# 4. Teaching & Run
+
+[__SOURCE](4-Teaching-run/1-manual/manual.md)
 ## 4.1 Manual Mode (Jog)
 
 (1) Pressing the [Mechanism] key at the top of the TP screen will change mechanism status to 1. it can be allow manual operation for Mechanism Group 1.
@@ -270,16 +276,17 @@ Base → Servogun→ Positioner → Jig → Sealer
 (3) Manual operation speed (based on S8): 25% of the additional axis maximum speed (however, linear speed is limited to 250mm/sec)
 
 </br>
-</br>
-</br>
 
-**ℹ️ 참고사항**
+{% hint style="info" %}
 
 In the case of additional axes, they are installed arbitrarily based on user requirements. Therefore, They are not pre-tuned except for som standard models.
 
-If there are issues with the control performance of an additional axis, [Additional axis autotuning](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning) is required.
+If there are issues with the control performance of an additional axis, [Additional axis autotuning](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning) is required.
+
+{% endhint %}
 
 
+[__SOURCE](4-Teaching-run/2-run/run.md)
 ## 4.2 Run
 
 (1) Interpolation Off</br>

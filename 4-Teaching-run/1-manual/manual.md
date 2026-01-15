@@ -10,13 +10,12 @@
 (3) Manual operation speed (based on S8): 25% of the additional axis maximum speed (however, linear speed is limited to 250mm/sec)
 
 </br>
-</br>
-</br>
 
-**ℹ️ 참고사항**
+{% hint style="info" %}
 
 In the case of additional axes, they are installed arbitrarily based on user requirements. Therefore, They are not pre-tuned except for som standard models.
 
-If there are issues with the control performance of an additional axis, [Additional axis autotuning](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning) is required.
+If there are issues with the control performance of an additional axis, [Additional axis autotuning](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning) is required.
 
+{% endhint %}
 

@@ -44,7 +44,7 @@ Base → Servogun→ Positioner → Jig → Sealer
 | BD : '1'  | BD640 board number: 1~2  |
 | Axis : '7' | BD640 #1 : 7~8 </br>BD640 #2 : 1~8  |
 
-※ If set to '1', '7', the 7th axis on BD640 board #1 is selected.
+* If set to '1', '7', the 7th axis on BD640 board #1 is selected.
 
 (4) Reduction Ratio:
 
