@@ -1,6 +1,6 @@
 ﻿
 [__SOURCE](README.md)
-# ${cont_model} 로봇제어기 기능설명서 - 부가축
+# ${cont_model} 제어기 기능설명서 - 부가축
 
 [__SOURCE](1-Introduction/README.md)
 # 1. 개요
