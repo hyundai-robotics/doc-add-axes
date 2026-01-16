@@ -4,7 +4,7 @@ This section explains the setup for additional axes except the basic robot axes.
 
 </br>
 
-### **【 Registration Procedure 】**
+### **[ Registration Procedure ]**
 
 * Preparation Work  </br>
 (1) Prepare the main unit (robot + additional axes) and wire harness  </br>

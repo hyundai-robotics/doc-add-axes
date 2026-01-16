@@ -14,7 +14,7 @@
 
 ---
 
-**【Additional Axis Parameter】**
+**[Additional Axis Parameter]**
 
 (1) Axis specification
 

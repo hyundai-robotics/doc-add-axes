@@ -9,7 +9,7 @@ This section explains the setup for additional axes except the basic robot axes.
 
 </br>
 
-### **【 Registration Procedure 】**
+### **[ Registration Procedure ]**
 
 * Preparation Work  </br>
 (1) Prepare the main unit (robot + additional axes) and wire harness  </br>
@@ -120,7 +120,7 @@ To configure the robot type and additional axis parameter setting, the engineer 
 
 ---
 
-**【Additional Axis Parameter】**
+**[Additional Axis Parameter]**
 
 (1) Axis specification
 
