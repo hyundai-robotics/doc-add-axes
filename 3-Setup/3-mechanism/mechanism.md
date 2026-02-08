@@ -2,7 +2,7 @@
 
 (1) Mechanism setting
 
-* Navigate to 『System』 → 『5: Initialization』 → 『6: Mechanism Setting』.
+* Navigate to `[System] - 5: Initialization - 6: Mechanism Setting`.
 
 <p align="center">
  <img src="../../_assets/mechanism.PNG" width="70%"></img>
@@ -15,7 +15,7 @@
 
 (2) Parameter File Backup
 
-* After completing the additional axis settings, copy the project file (hi6_proj.json) to a USB memory from 『Service』 → 『5: File manager』.
+* After completing the additional axis settings, copy the project file (hi6_proj.json) to a USB memory from `[Service] - 5: File manager`.
 
 <p align="center">
  <img src="../../_assets/project.PNG" width="70%"></img>

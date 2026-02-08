@@ -1,6 +1,6 @@
 ﻿## 3.2 Additional Axis Parameter Setting
 
-(1) Check the 『Additional axis parameter setting』 screen as shown below.
+(1) Check the `Additional axis parameter setting` screen as shown below.
 
 <p align="center">
  <img src="../../_assets/addaxes.PNG" width="70%"></img>
@@ -8,7 +8,7 @@
 </p>
 
 (2) Configure the additional axis parameter.</br>
-(3) Press 『OK』 to complete setting.
+(3) Press `[OK]` to complete setting.
 
 </br>
 
@@ -32,8 +32,8 @@ Base → Servogun→ Positioner → Jig → Sealer
 * If the base axis is not installed in the same direction as the robot coordinate system, select "Any" and do "Base axis calibration".
 * Like linear base axes, circular base axes can also be set to Rx/Ry/Rz or selected as "Any" and do "Base axis calibration".
 * For "Jig" or "Sealer", the control mode can be selected as either "position control" or "speed control". In speed control mode, the motor rotates according to the motor speed command.
-* For "Servogun", refer to the 『[Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/2-servo-gun-initial-setting/README)』.
-* For "Positioner", refer to the 『[Positioner Synchronization Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/english/README)』
+* For "Servogun", refer to the [Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/2-servo-gun-initial-setting/README).
+* For "Positioner", refer to the [Positioner Synchronization Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README)
 
 (3) Axis position:
 
@@ -73,7 +73,7 @@ Base → Servogun→ Positioner → Jig → Sealer
 * Sets the effective operating range of additional axis
 * For linear axes, set in millimeters [mm].
 * For circular axes, set in degrees [deg].
-* The values are applied in 『System』 → 『3:Robot parameter』 → 『3: Software limit』.
+* The values are applied in `[System] - 3:Robot parameter - 3: Software limit`.
 
 (6) AMP Specifications:
 
@@ -126,6 +126,6 @@ Base → Servogun→ Positioner → Jig → Sealer
 (8) Acceleration/Deceleration Parameters:
 
 * Set the maximum speed and acceleration time for the additional axis.
-* The values set here are applied in 『System』 → 『3: Robot parameter』 → 『34: Accel and decel parameter』.
+* The values set here are applied in `[System] - 3: Robot parameter - 34: Accel and decel parameter`.
 * While the maximum speed of the additional axis can be specified by the user, it is limited by the motor's rated speed.
 * If vibration occurs during additional axis operation, the acceleration time should be adjusted accordingly.
