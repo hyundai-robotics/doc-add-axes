@@ -11,3 +11,4 @@
 * [4. Teaching & Run](4-Teaching-run/4_teaching_run.md)
   * [4.1 Manual Mode (Jog)](4-Teaching-run/1-manual/manual.md)
   * [4.2 Run](4-Teaching-run/2-run/run.md)
+* [5. Manual Tuning of External Axes](5-Manual-Tuning/README.md)
