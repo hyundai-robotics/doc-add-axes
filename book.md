@@ -335,10 +335,12 @@ This section describes the manual tuning of external axis servos.
 The external axis should be warmed up to create an optimal tuning environment. The appropriate timing for tuning can be determined based on the encoder temperature. The checking method is as follows.
 
 ![](../_assets/enc_temp1.PNG)
+
 Figure 3.9 Checking encoder temperature during manual tuning of an external axis
 
 
 ![](../_assets/enc_temp2.PNG)
+
 Figure 3.10 Checking encoder temperature during manual tuning of an external axis
 
 
@@ -348,6 +350,7 @@ This is the process of finding the maximum gain value. The goal is to operate th
 
 
 ![](../_assets/max_kv.PNG)
+
 Figure 3.11 Finding the oscillation gain during manual tuning of an external axis
 
 Once the oscillation gain is found, reduce Kv by half and apply it. This value becomes the initial gain value.
@@ -366,9 +369,11 @@ Once the oscillation gain is found, reduce Kv by half and apply it. This value b
 #### Example
 
 ![](../_assets/6010_job_Window.png)
+
 Figure 3.12 6010.job screen
 
 ![](../_assets/mechanism_window.png)
+
 Figure 3.13 External axis mechanism screen
 
 
@@ -406,6 +411,7 @@ Note2. If the state is ON on the screen, press the 'Single Initialization' butto
 The results can be checked as follows.
 
 ![](../_assets/Trq_ripple_Data_result1.PNG)
+
 Figure 3.15 Result confirmation
 
 
