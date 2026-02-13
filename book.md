@@ -2,6 +2,11 @@
 [__SOURCE](README.md)
 # ${cont_model} 제어기 기능설명서 - 부가축
 
+[__SOURCE](0-about-this-manual/precautions.md)
+# 사전 주의사항
+
+{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/ko/precautions.md" %}
+
 [__SOURCE](1-Introduction/README.md)
 # 1. 개요
 로봇 기본축 이외에 추가된 부가축의 등록방법에 대하여 설명합니다. 
@@ -100,7 +105,7 @@
 
 </br>
 
-(3) `[시스템] - 5: 초기화 - 5: 부가축 파라미터 설정`](../2-parameters/parameters.md)』 메뉴로 진입합니다. 
+(3) [`[시스템] - 5: 초기화 - 5: 부가축 파라미터 설정`](../2-parameters/parameters.md) 메뉴로 진입합니다. 
 
 <p align="center">
  <img src="../../_assets/addaxes_menu.PNG" width="70%"></img>
@@ -111,7 +116,7 @@
 ## 3.2 부가축 정수 설정
 
 
-(1)	아래와 같은 `부가축 정수 설정`화면을 확인합니다.
+(1)	아래와 같은 `부가축 정수 설정` 화면을 확인합니다.
 
 
 <p align="center">
@@ -138,7 +143,7 @@
 베이스축이 로봇 좌표계와 동일한 방향으로 설치되지 않은 경우는 <임의>로 선택하고 `베이스축 캘리브레이션`을 실행합니다. <br>
 회전 베이스축도 직동 베이스축과 같이 Rx/Ry/Rz를 선택하거나 <임의>로 선택하여 `베이스축 캘리브레이션`을 실행합니다. <br>
 축 사양을 <지그>나 <실러>로 선택한 경우에는 제어모드를 <위치제어>나 <속도제어>중에서 선택할 수 있으며 속도제어인 경우는 모터속도 지령에 따라 모터가 회전합니다.<br>  
-서보건을 설정하는 경우는 [스폿용접 기능설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/2-servo-gun-initial-setting/README), 포지셔너를 사용하는 경우는 [포지셔너동기 기능설명서](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/korean/README)를 참조하십시오.
+서보건을 설정하는 경우는 [스폿용접 기능설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/2-servo-gun-initial-setting/README), 포지셔너를 사용하는 경우는 [포지셔너동기 기능설명서](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/README)를 참조하십시오.
 
 (3)	축 위치 : 부가축의 물리적인 구성을 사용자가 지정하여 사용할수 있도록 합니다.
 
