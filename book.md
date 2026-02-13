@@ -2,6 +2,11 @@
 [__SOURCE](README.md)
 # ${cont_model} Controller Operation Manual - Additional axes
 
+[__SOURCE](0-about-this-manual/precautions.md)
+# Precautions
+
+{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/en/precautions.md" %}
+
 [__SOURCE](1-Introduction/1_introduction.md)
 # 1. Introduction
 
@@ -334,12 +339,12 @@ This section describes the manual tuning of external axis servos.
 
 The external axis should be warmed up to create an optimal tuning environment. The appropriate timing for tuning can be determined based on the encoder temperature. The checking method is as follows.
 
-![](../_assets/enc_temp1.PNG)
+![](../_assets/enc_temp1_en.png)
 
 Figure 3.9 Checking encoder temperature during manual tuning of an external axis
 
 
-![](../_assets/enc_temp2.PNG)
+![](../_assets/enc_temp2_en.png)
 
 Figure 3.10 Checking encoder temperature during manual tuning of an external axis
 
@@ -349,7 +354,7 @@ Figure 3.10 Checking encoder temperature during manual tuning of an external axi
 This is the process of finding the maximum gain value. The goal is to operate the robot using jog motion and identify the gain at which noise begins to occur.
 
 
-![](../_assets/max_kv.PNG)
+![](../_assets/max_kv_en.png)
 
 Figure 3.11 Finding the oscillation gain during manual tuning of an external axis
 
@@ -368,11 +373,11 @@ Once the oscillation gain is found, reduce Kv by half and apply it. This value b
 
 #### Example
 
-![](../_assets/6010_job_Window.png)
+![](../_assets/6010_job_Window_en.png)
 
 Figure 3.12 6010.job screen
 
-![](../_assets/mechanism_window.png)
+![](../_assets/mechanism_window_en.png)
 
 Figure 3.13 External axis mechanism screen
 
@@ -398,7 +403,7 @@ After confirming the motion range, the program will stop due to a stop command w
 
 (3) Checking Results (Screen: System → Axis Control Optimization → Torque Ripple Tuning)
 
-![](../_assets/Trq_ripple_window.PNG)
+![](../_assets/Trq_ripple_window_en.png)
 
 Figure 3.14 Torque Ripple screen configuration
 
@@ -410,7 +415,7 @@ Note2. If the state is ON on the screen, press the 'Single Initialization' butto
 
 The results can be checked as follows.
 
-![](../_assets/Trq_ripple_Data_result1.PNG)
+![](../_assets/Trq_ripple_Data_result1_en.png)
 
 Figure 3.15 Result confirmation
 
