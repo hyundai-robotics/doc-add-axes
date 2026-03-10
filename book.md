@@ -12,13 +12,18 @@
 
 This section explains the setup for additional axes except the basic robot axes.
 
+{% hint style="info" %}
+ The servo boards for each controller are as follows:<br>
+ (Hi6 : BD640, Hi7 : BD642)
+{% endhint %}  
+
 </br>
 
 ### **[ Registration Procedure ]**
 
 * Preparation Work  </br>
 (1) Prepare the main unit (robot + additional axes) and wire harness  </br>
-(2) Prepare the controller, one set of BD640 (required when applying additional axes of three or more), additional axis AMP, and signal cables  </br>
+(2) Prepare the controller, one set of servo boards (required when applying additional axes of three or more), additional axis AMP, and signal cables  </br>
 (3) Additional Axis Parameter  </br>
     Prepare the input data for the additional axis, including axis specifications, configuration, reduction ratio, motor, and AMP, in the format required for additional axis setting (refer to Section 3.2).  </br>
 (4) Additional Axis Acceleration/Deceleration Time  </br>
@@ -40,18 +45,23 @@ After configuring the additional axis operating environment, save the hi6_proj.j
 * Check the components and materials to be connected.
 * Ensure that the pre-calculated data and selected additional axis information are prepared.
 (Reduction ratio, AMP specifications, motor specifications, maximum speed, acceleration time, etc.)
-* The combination of BD640 and AMP according to the number of additional axes is as follows.
+* The combination of Servo board and AMP according to the number of additional axes is as follows.
 
   | Axis Configuration | BD/AMP Configuration |
   | :------------------: | :-------------------: |
-    | 1 to 6 axes</br>(basically 6 axes) | 1 BD640</br>1 AMP(6-axis type) |
-  | 7 to 8 axes</br>(basically 6 axes + 2 additional axes) | 1 BD640</br>1 AMP(6-axis type)</br>1 to 2 AMPs(1-axis type) |
-  | 9 to 12 axes</br>(basically 6 axes + 6 additional axes) | 2 BD640</br> 2 AMP(6-axis type) |
-  | 13 to 16 axes</br>(basically 6 axes + 12 additional axes) | 2 BD640</br>2 AMP(6-axis type)</br>1 to 4 AMPs(1-axis type) |
+    | 1 to 6 axes</br>(basically 6 axes) | 1 Servo board</br>1 AMP(6-axis type) |
+  | 7 to 8 axes</br>(basically 6 axes + 2 additional axes) | 1 Servo board</br>1 AMP(6-axis type)</br>1 to 2 AMPs(1-axis type) |
+  | 9 to 12 axes</br>(basically 6 axes + 6 additional axes) | 2 Servo boards</br> 2 AMP(6-axis type) |
+  | 13 to 16 axes</br>(basically 6 axes + 12 additional axes) | 2 Servo boards</br>2 AMP(6-axis type)</br>1 to 4 AMPs(1-axis type) |
+
+{% hint style="info" %}
+ The servo boards for each controller are as follows:<br>
+ (Hi6 : BD640, Hi7 : BD642)
+{% endhint %} 
 
 </br>
 
-* DIP switch settings for interface board (BD6H0) Based on the number of additional axes.
+* DIP switch settings for interface board (BD6H0) Based on the number of additional axes.(※ Hi6 only)
   <div align="left">
 
   | Name | Purpose | Setting|
@@ -68,7 +78,7 @@ After configuring the additional axis operating environment, save the hi6_proj.j
   </div>
 
 {% hint style="info" %}
-Each BD640 can control up to 8 axes, with two types of AMPs available (6-axis type and 1-axis type).
+Each Servo board can control up to 8 axes, with two types of AMPs available (6-axis type and 1-axis type).
 
 {% endhint %}
 
@@ -150,12 +160,17 @@ Base → Servogun→ Positioner → Jig → Sealer
 
 * Allows the user to axis configuration of the additional axis.
 
+{% hint style="info" %}
+ The servo boards for each controller are as follows:<br>
+ (Hi6 : BD640, Hi7 : BD642)
+{% endhint %} 
+
 |Axis Position Information | Setting Value |
 |---|---|
-| BD : '1'  | BD640 board number: 1~2  |
-| Axis : '7' | BD640 #1 : 7~8 </br>BD640 #2 : 1~8  |
+| BD : '1'  | servo board number: 1~2  |
+| Axis : '7' | servo board #1 : 7~8 </br>servo board #2 : 1~8  |
 
-* If set to '1', '7', the 7th axis on BD640 board #1 is selected.
+* If set to '1', '7', the 7th axis on servo board board #1 is selected.
 
 (4) Reduction Ratio:
 

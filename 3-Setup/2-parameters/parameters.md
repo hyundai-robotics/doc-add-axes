@@ -39,12 +39,17 @@ Base → Servogun→ Positioner → Jig → Sealer
 
 * Allows the user to axis configuration of the additional axis.
 
+{% hint style="info" %}
+ The servo boards for each controller are as follows:<br>
+ (Hi6 : BD640, Hi7 : BD642)
+{% endhint %} 
+
 |Axis Position Information | Setting Value |
 |---|---|
-| BD : '1'  | BD640 board number: 1~2  |
-| Axis : '7' | BD640 #1 : 7~8 </br>BD640 #2 : 1~8  |
+| BD : '1'  | servo board number: 1~2  |
+| Axis : '7' | servo board #1 : 7~8 </br>servo board #2 : 1~8  |
 
-* If set to '1', '7', the 7th axis on BD640 board #1 is selected.
+* If set to '1', '7', the 7th axis on servo board #1 is selected.
 
 (4) Reduction Ratio:
 

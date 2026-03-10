@@ -2,13 +2,18 @@
 
 This section explains the setup for additional axes except the basic robot axes.
 
+{% hint style="info" %}
+ The servo boards for each controller are as follows:<br>
+ (Hi6 : BD640, Hi7 : BD642)
+{% endhint %}  
+
 </br>
 
 ### **[ Registration Procedure ]**
 
 * Preparation Work  </br>
 (1) Prepare the main unit (robot + additional axes) and wire harness  </br>
-(2) Prepare the controller, one set of BD640 (required when applying additional axes of three or more), additional axis AMP, and signal cables  </br>
+(2) Prepare the controller, one set of servo boards (required when applying additional axes of three or more), additional axis AMP, and signal cables  </br>
 (3) Additional Axis Parameter  </br>
     Prepare the input data for the additional axis, including axis specifications, configuration, reduction ratio, motor, and AMP, in the format required for additional axis setting (refer to Section 3.2).  </br>
 (4) Additional Axis Acceleration/Deceleration Time  </br>
