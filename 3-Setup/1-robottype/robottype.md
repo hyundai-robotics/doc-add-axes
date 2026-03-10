@@ -11,7 +11,7 @@ To configure the robot type and additional axis parameter setting, the engineer 
 (2) Enter the number of additional axes and press "OK" and reboot the controller.
 
 <p align="center">
- <img src="../../_assets/robottype.PNG" width="70%"></img>
+ <img src="../../_assets/robottype.png" width="70%"></img>
  <em><p align="center">Figure 3.1 Robot Type Selection Screen</p></em>
 </p>
 
