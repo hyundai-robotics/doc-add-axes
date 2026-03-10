@@ -1,7 +1,7 @@
 ﻿
 # Table of contents
 
-* [${cont_model}$ Robot Controller Function Manual - Additional Axes](README.md)
+* [${cont_model} Robot Controller Function Manual - Additional Axes](README.md)
 * [Precautions](0-about-this-manual/precautions.md)
 * [1. Introduction](1-Introduction/1_introduction.md)
 * [2. Presetting](2-Presetting/2_presetting.md)
