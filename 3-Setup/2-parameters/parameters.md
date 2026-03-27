@@ -32,8 +32,8 @@ Base → Servogun→ Positioner → Jig → Sealer
 * If the base axis is not installed in the same direction as the robot coordinate system, select "Any" and do "Base axis calibration".
 * Like linear base axes, circular base axes can also be set to Rx/Ry/Rz or selected as "Any" and do "Base axis calibration".
 * For "Jig" or "Sealer", the control mode can be selected as either "position control" or "speed control". In speed control mode, the motor rotates according to the motor speed command.
-* For "Servogun", refer to the [Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/2-servo-gun-initial-setting/README).
-* For "Positioner", refer to the [Positioner Synchronization Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README)
+* For "Servogun", refer to the [Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/2-servo-gun-initial-setting/README?cont_model=${cont_model}).
+* For "Positioner", refer to the [Positioner Synchronization Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README?cont_model=${cont_model})
 
 (3) Axis position:
 
