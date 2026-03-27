@@ -28,7 +28,7 @@
 베이스축이 로봇 좌표계와 동일한 방향으로 설치되지 않은 경우는 <임의>로 선택하고 `베이스축 캘리브레이션`을 실행합니다. <br>
 회전 베이스축도 직동 베이스축과 같이 Rx/Ry/Rz를 선택하거나 <임의>로 선택하여 `베이스축 캘리브레이션`을 실행합니다. <br>
 축 사양을 <지그>나 <실러>로 선택한 경우에는 제어모드를 <위치제어>나 <속도제어>중에서 선택할 수 있으며 속도제어인 경우는 모터속도 지령에 따라 모터가 회전합니다.<br>  
-서보건을 설정하는 경우는 [스폿용접 기능설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/2-servo-gun-initial-setting/README), 포지셔너를 사용하는 경우는 [포지셔너동기 기능설명서](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/README)를 참조하십시오.
+서보건을 설정하는 경우는 [스폿용접 기능설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/2-servo-gun-initial-setting/README?cont_model=${cont_model}), 포지셔너를 사용하는 경우는 [포지셔너동기 기능설명서](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/README?cont_model=${cont_model})를 참조하십시오.
 
 (3)	축 위치 : 부가축의 물리적인 구성을 사용자가 지정하여 사용할수 있도록 합니다.
 
