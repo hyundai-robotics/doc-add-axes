@@ -9,13 +9,13 @@
 
 (3)	수동동작 속도( S8기준 ) : 부가축 최고속의 25% (단, 직선최고속 250mm/sec로 제한)  
 
-
-<br>
-<br>
-<br>
+</br>
+</br>
+</br>
 
 ### 참고사항
-부가축의 경우 사용자의 필요에 따라 임의로 장착 되는 제어축이기 때문에 일부 표준품을 제외하면 사전에 튜닝이 되어있지 않습니다.<br>
-부가축의 제어 성능에 문제가 있는 경우 게인 튜닝이 필요합니다. </br>
-[부가축 자동튜닝](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning)<br>
-만약 부가축 자동튜닝이 원활히 동작되지 않는 경우, 5-Manual-Tuning를 활용하시면 됩니다.
+
+* 부가축의 경우 사용자의 필요에 따라 임의로 장착 되는 제어축이기 때문에 일부 표준품을 제외하면 사전에 튜닝이 되어있지 않습니다.</br>
+* 부가축의 제어 성능에 문제가 있는 경우 게인 튜닝이 필요합니다. </br>
+* [부가축 자동튜닝](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning?cont_model=${cont_model})으로 튜닝을 진행합니다.
+* 만약 부가축 자동튜닝이 원활히 동작되지 않는 경우, [부가축 수동 튜닝](./../../5-Manual-Tuning/README.md)을 활용하시면 됩니다.
