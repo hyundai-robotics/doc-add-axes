@@ -5,9 +5,15 @@
 [__SOURCE](0-about-this-manual/precautions.md)
 # Precautions
 
-{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/en/precautions.md" %}
+{% include file="en/precautions.md" %}
 
 [__SOURCE](1-Introduction/1_introduction.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
 # 1. Introduction
 
 This section explains the setup for additional axes except the basic robot axes.
@@ -40,6 +46,12 @@ Turn off the controller → Connect the necessary wires between the main unit an
 After configuring the additional axis operating environment, save the hi6_proj.json file to an external storage device (USB memory).
 
 [__SOURCE](2-Presetting/2_presetting.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
 # 2. Presetting
 
 * Check the components and materials to be connected.
@@ -57,11 +69,11 @@ After configuring the additional axis operating environment, save the hi6_proj.j
 {% hint style="info" %}
  The servo boards for each controller are as follows:<br>
  (Hi6 : BD640, Hi7 : BD642)
-{% endhint %} 
+{% endhint %}  
 
 </br>
 
-* DIP switch settings for interface board (BD6H0) Based on the number of additional axes.(※ Hi6 only)
+* DIP switch settings for interface board (BD6H0) Based on the number of additional axes.(* Hi6 only)
   <div align="left">
 
   | Name | Purpose | Setting|
@@ -106,7 +118,7 @@ To configure the robot type and additional axis parameter setting, the engineer 
 </br>
 </br>
 <p align="center">
- <img src="../../_assets/reboot.png" width="70%"></img>
+ <img src="../../_assets/reboot.PNG" width="70%"></img>
  <em><p align="center">Figure 3.2 Controller Reboot Notification</p></em>
 </p>
 
@@ -119,6 +131,12 @@ To configure the robot type and additional axis parameter setting, the engineer 
 </p>
 
 [__SOURCE](3-Setup/2-parameters/parameters.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
 ## 3.2 Additional Axis Parameter Setting
 
 (1) Check the `Additional axis parameter setting` screen as shown below.
@@ -153,8 +171,8 @@ Base → Servogun→ Positioner → Jig → Sealer
 * If the base axis is not installed in the same direction as the robot coordinate system, select "Any" and do "Base axis calibration".
 * Like linear base axes, circular base axes can also be set to Rx/Ry/Rz or selected as "Any" and do "Base axis calibration".
 * For "Jig" or "Sealer", the control mode can be selected as either "position control" or "speed control". In speed control mode, the motor rotates according to the motor speed command.
-* For "Servogun", refer to the [Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/2-servo-gun-initial-setting/README).
-* For "Positioner", refer to the [Positioner Synchronization Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README)
+* For "Servogun", refer to the [Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/2-servo-gun-initial-setting/README?cont_model=${cont_model}).
+* For "Positioner", refer to the [Positioner Synchronization Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README?cont_model=${cont_model})
 
 (3) Axis position:
 
@@ -170,7 +188,7 @@ Base → Servogun→ Positioner → Jig → Sealer
 | BD : '1'  | servo board number: 1~2  |
 | Axis : '7' | servo board #1 : 7~8 </br>servo board #2 : 1~8  |
 
-* If set to '1', '7', the 7th axis on servo board board #1 is selected.
+* If set to '1', '7', the 7th axis on servo board #1 is selected.
 
 (4) Reduction Ratio:
 
@@ -286,7 +304,7 @@ Base → Servogun→ Positioner → Jig → Sealer
 [__SOURCE](4-Teaching-run/1-manual/manual.md)
 ## 4.1 Manual Mode (Jog)
 
-(1) Pressing the [Mechanism] key at the top of the TP screen will change mechanism status to 1. it can be allow manual operation for Mechanism Group 1.
+(1) Pressing the [Mechanism] key at the top of the TP screen will change mechanism status to 1. This allows for manual operation for Mechanism Group 1.
 
 (2) Additional axis manual operation moves each axis individually, regardless of the coordinate system. However, for moving axes, movement depends on the selected coordinate system:
 
@@ -299,9 +317,10 @@ Base → Servogun→ Positioner → Jig → Sealer
 
 {% hint style="info" %}
 
-In the case of additional axes, they are installed arbitrarily based on user requirements. Therefore, They are not pre-tuned except for som standard models.
-
-If there are issues with the control performance of an additional axis, [Additional axis autotuning](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning) is required.
+* In the case of additional axes, they are installed arbitrarily based on user requirements. Therefore, they are not pre-tuned except for some standard models.
+* If there are performance issues with an additional axis, gain tuning is required.
+* Please proceed with tuning using [Additional axis autotuning](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/7-auto-calibration/7-addaxis-autotuning?cont_model=${cont_model}).
+* If the Additional axis autotuning process does not function smoothly, you can utilize [Additional Axis Manual Tuning](./../../5-Manual-Tuning/README.md).
 
 {% endhint %}
 

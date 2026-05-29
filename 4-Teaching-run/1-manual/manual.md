@@ -15,7 +15,7 @@
 
 * In the case of additional axes, they are installed arbitrarily based on user requirements. Therefore, they are not pre-tuned except for some standard models.
 * If there are performance issues with an additional axis, gain tuning is required.
-* Please proceed with tuning using [Additional axis autotuning](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning?cont_model=${cont_model}).
+* Please proceed with tuning using [Additional axis autotuning](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/7-auto-calibration/7-addaxis-autotuning?cont_model=${cont_model}).
 * If the Additional axis autotuning process does not function smoothly, you can utilize [Additional Axis Manual Tuning](./../../5-Manual-Tuning/README.md).
 
 {% endhint %}

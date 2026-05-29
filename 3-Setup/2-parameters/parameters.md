@@ -1,4 +1,10 @@
-﻿## 3.2 Additional Axis Parameter Setting
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
+## 3.2 Additional Axis Parameter Setting
 
 (1) Check the `Additional axis parameter setting` screen as shown below.
 

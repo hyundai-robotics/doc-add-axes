@@ -1,4 +1,10 @@
-﻿# 2. Presetting
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
+# 2. Presetting
 
 * Check the components and materials to be connected.
 * Ensure that the pre-calculated data and selected additional axis information are prepared.
@@ -19,7 +25,7 @@
 
 </br>
 
-* DIP switch settings for interface board (BD6H0) Based on the number of additional axes.(※ Hi6 only)
+* DIP switch settings for interface board (BD6H0) Based on the number of additional axes.(* Hi6 only)
   <div align="left">
 
   | Name | Purpose | Setting|

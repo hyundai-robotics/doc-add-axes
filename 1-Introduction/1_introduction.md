@@ -1,4 +1,10 @@
-﻿# 1. Introduction
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
+# 1. Introduction
 
 This section explains the setup for additional axes except the basic robot axes.
 
