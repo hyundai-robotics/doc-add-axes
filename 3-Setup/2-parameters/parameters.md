@@ -1,4 +1,10 @@
-﻿## 3.2 부가축 정수 설정
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
+## 3.2 부가축 정수 설정
 
 
 (1)	아래와 같은 `부가축 정수 설정` 화면을 확인합니다.

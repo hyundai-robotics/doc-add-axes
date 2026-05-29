@@ -1,4 +1,10 @@
-﻿# 1. 개요
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
+# 1. 개요
 로봇 기본축 이외에 추가된 부가축의 등록방법에 대하여 설명합니다. 
 
 {% hint style="info" %}
