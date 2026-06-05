@@ -2,12 +2,32 @@
 [__SOURCE](README.md)
 # ${cont_model} 제어기 기능설명서 - 부가축
 
+[__SOURCE](0-about-this-manual/README.md)
+# 이 설명서에 대하여
+
+제품을 사용하기 전에 반드시 설명서의 내용을 충분히 숙지하시기 바랍니다. 또한 필요할 때 언제든 볼 수 있도록 설명서를 가까운 장소에 보관하십시오.
+
+이 설명서는 HD현대로보틱스 제품을 구매한 고객에게 참조용으로 제공되거나 교육을 위한 내부 교육 자료로 제공되어 사용될 수 있습니다.
+
+이 설명서는 표준 사양을 기준으로 작성되었으므로 구입하신 제품의 모델에 따라 일부 내용이 다를 수 있습니다. 또한 이 설명서의 내용과 사양은 제품의 성능 향상을 위해 예고 없이 변경될 수 있으며 부정확한 내용이나 오탈자로 인해 발생하는 상황에 대해서 HD현대로보틱스는 책임이 없습니다. 개정에 관한 상세한 정보는 당사의 인터넷 웹사이트 [https://www.hd-hyundairobotics.com/](https://www.hd-hyundairobotics.com/)를 방문하여 확인하시기 바랍니다.
+
 [__SOURCE](0-about-this-manual/precautions.md)
 # 사전 주의사항
 
-{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/ko/precautions.md" %}
+{% include file="ko/precautions.md" %}
+
+[__SOURCE](0-about-this-manual/safety-notice.md)
+# 안전 주의 사항
+
+{% include file="ko/safety-notice.md" %}
 
 [__SOURCE](1-Introduction/README.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
 # 1. 개요
 로봇 기본축 이외에 추가된 부가축의 등록방법에 대하여 설명합니다. 
 
@@ -39,12 +59,18 @@
 부가축 동작환경을 설정한 후 외부기억장치( USB memory ) 로 hi6_proj.json 파일을 저장합니다.
 
 [__SOURCE](2-Presetting/README.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
 # 2. 준비작업
 
 * 접속할 부품 및 자재들을 확인합니다.
 * 미리 계산해 둔 데이터나 선정된 부가축 정보 등이 준비되었는지 확인합니다.
 (감속비, AMP 사양, Motot 사양, 최고속, 가속시간 등)
-* 축수에 따른 BD640와 AMP의 조합은 다음과 같습니다.
+* 축수에 따른 서보보드와 AMP의 조합은 다음과 같습니다.
 
   | 축 구성 | BD/AMP 구성 |
   | :------------------: | :-------------------: |
@@ -58,7 +84,9 @@
  (Hi6 : BD640, Hi7 : BD642)
 {% endhint %}
 
-* 축수에 따라서 인터페이스 보드(BD6H0)의 딥스위치 설정이 필요합니다. (※ Hi6 제어기만 해당)
+</br>
+
+* 축수에 따라서 인터페이스 보드(BD6H0)의 딥스위치 설정이 필요합니다. (* Hi6 제어기만 해당)
 
   <div align="left">
 
@@ -76,7 +104,7 @@
 </p>
 
 {% hint style="info" %}
- 서보 보드 1 대당 8축 제어 가능, AMP 2종 (6축용, 1축용)
+ 서보 보드 1 대당 8축 제어 가능, AMP 2종 (6축용, 1축용)<br>
 {% endhint %}
 
 [__SOURCE](3-Setup/README.md)
@@ -88,7 +116,7 @@
 
 다음과 같은 순서로 부가축을 설정합니다.
 
-(1) 수동모드의 `[시스템] - 5: 초기화 - 2: 로봇타입선택` 메뉴에서 사용하고자 하는 로봇타입을 선택합니다.  
+(1) 수동모드의 `[시스템] - 5: 초기화 - 2: 로봇타입선택` 메뉴에서 사용하고자 하는 로봇타입을 선택합니다.  </br>
 
 <p align="center">
  <img src="../../_assets/robottype.PNG" width="70%"></img>
@@ -120,6 +148,12 @@
 </p>
 
 [__SOURCE](3-Setup/2-parameters/parameters.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
 ## 3.2 부가축 정수 설정
 
 
@@ -150,7 +184,7 @@
 베이스축이 로봇 좌표계와 동일한 방향으로 설치되지 않은 경우는 <임의>로 선택하고 `베이스축 캘리브레이션`을 실행합니다. <br>
 회전 베이스축도 직동 베이스축과 같이 Rx/Ry/Rz를 선택하거나 <임의>로 선택하여 `베이스축 캘리브레이션`을 실행합니다. <br>
 축 사양을 <지그>나 <실러>로 선택한 경우에는 제어모드를 <위치제어>나 <속도제어>중에서 선택할 수 있으며 속도제어인 경우는 모터속도 지령에 따라 모터가 회전합니다.<br>  
-서보건을 설정하는 경우는 [스폿용접 기능설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/2-servo-gun-initial-setting/README), 포지셔너를 사용하는 경우는 [포지셔너동기 기능설명서](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/README)를 참조하십시오.
+서보건을 설정하는 경우는 [스폿용접 기능설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/2-servo-gun-initial-setting/README?cont_model=${cont_model}), 포지셔너를 사용하는 경우는 [포지셔너동기 기능설명서](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/README?cont_model=${cont_model})를 참조하십시오.
 
 (3)	축 위치 : 부가축의 물리적인 구성을 사용자가 지정하여 사용할수 있도록 합니다.
 
@@ -166,8 +200,7 @@
 | BD : '1'  | 서보 보드 번호 : 1~2  |
 | Axis : '7' | 서보 보드 #1 : 7~8 </br>서보 보드 #2 : 1~8  |
 
-  ※ '1', '7' 로 설정하였다면, 서보 보드 1번의 7번째 축으로 설정됨  
-
+  * '1', '7' 로 설정하였다면, 서보 보드 1번의 7번째 축으로 설정됨  
 </center>
 
 (4) 감속비 : 모터 회전수당 축의 이동량을 등록합니다.  
@@ -254,16 +287,17 @@ Ex> TSM3563N7020E731, TSM3563N7020E731_R1, TSM3563N7020E731_R2 중 TSM3563N7020E
 
 (3)	수동동작 속도( S8기준 ) : 부가축 최고속의 25% (단, 직선최고속 250mm/sec로 제한)  
 
-
-<br>
-<br>
-<br>
+</br>
+</br>
+</br>
 
 ### 참고사항
-부가축의 경우 사용자의 필요에 따라 임의로 장착 되는 제어축이기 때문에 일부 표준품을 제외하면 사전에 튜닝이 되어있지 않습니다.<br>
-부가축의 제어 성능에 문제가 있는 경우 게인 튜닝이 필요합니다. </br>
-[부가축 자동튜닝](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning)<br>
-만약 부가축 자동튜닝이 원활히 동작되지 않는 경우, 5-Manual-Tuning를 활용하시면 됩니다.
+
+* 부가축의 경우 사용자의 필요에 따라 임의로 장착 되는 제어축이기 때문에 일부 표준품을 제외하면 사전에 튜닝이 되어있지 않습니다.</br>
+* 부가축의 제어 성능에 문제가 있는 경우 게인 튜닝이 필요합니다. </br>
+* [부가축 자동튜닝](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/7-auto-calibration/7-Addaxis-autotuning?cont_model=${cont_model})으로 튜닝을 진행합니다.
+* 만약 부가축 자동튜닝이 원활히 동작되지 않는 경우, [부가축 수동 튜닝](./../../5-Manual-Tuning/README.md)을 활용하시면 됩니다.
+
 [__SOURCE](4-Teaching-run/2-run/run.md)
 ## 4.2 재생
 
