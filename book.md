@@ -15,7 +15,7 @@
 
 {% include file="en/safety-notice.md" %}
 
-[__SOURCE](1-Introduction/1_introduction.md)
+[__SOURCE](1-Introduction/README.md)
 <script id="page-config" type="application/json">
 {
 	"permittedStrs": ["Hi6", "Hi7"]
@@ -53,7 +53,7 @@ Turn off the controller → Connect the necessary wires between the main unit an
 * Completion  </br>
 After configuring the additional axis operating environment, save the hi6_proj.json file to an external storage device (USB memory).
 
-[__SOURCE](2-Presetting/2_presetting.md)
+[__SOURCE](2-Presetting/README.md)
 <script id="page-config" type="application/json">
 {
 	"permittedStrs": ["Hi6", "Hi7"]
@@ -102,7 +102,7 @@ Each Servo board can control up to 8 axes, with two types of AMPs available (6-a
 
 {% endhint %}
 
-[__SOURCE](3-Setup/3_setup.md)
+[__SOURCE](3-Setup/README.md)
 # 3. Setup for Robot Type and Additional Axis parameter
 
 [__SOURCE](3-Setup/1-robottype/robottype.md)
@@ -306,7 +306,7 @@ Base → Servogun→ Positioner → Jig → Sealer
  <img src="../../_assets/project.PNG" width="70%"></img>
  <em><p align="center">Figure 3.8 Setting File Backup</p></em>
 </p>
-[__SOURCE](4-Teaching-run/4_teaching_run.md)
+[__SOURCE](4-Teaching-run/README.md)
 # 4. Teaching & Run
 
 [__SOURCE](4-Teaching-run/1-manual/manual.md)
