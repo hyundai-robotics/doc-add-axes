@@ -1,20 +1,20 @@
-﻿# 5. Manual Tuning of External Axes
+﻿# 5. 手动调节外部轴
 
-This section describes the manual tuning of external axis servos.
+本节描述了外部轴伺服的手动调节。
 
 
-### Specifications
+### 规格
 
-(1) Tuning is available when the controller system is configured for up to 16 axes.
-- In the case of a 6-axis robot, up to 10 external axes can be tuned.
+(1) 当控制器系统配置为最多 16 个轴时，可以进行调节。
+- 在六轴机器人情况下，可以调节最多 10 个外部轴。
 
-(2) When in Engineering Mode (R314), the manual tuning function for external axes is activated in the UI. 
+(2) 在工程模式 (R314) 下，用户界面中激活外部轴的手动调节功能。 
 
-### Preparation
+### 准备
   
-(1) Engineering Mode (R314)
+(1) 工程模式 (R314)
 
-(2) Job Files: The following files are required in the controller.
+(2) 作业文件：控制器中需要以下文件。
 
 - 6000_axis_tun_sub_set_global_one_axis.job
 - 6010_axis_tun_sub_set_tun_axis.job
@@ -23,99 +23,100 @@ This section describes the manual tuning of external axis servos.
 - 6041_axis_tun_sub_set_pose_data_one_axis.job
 - 6043_axis_tun_sub_run_high_spd_one_axis.job
 
-(3) Warm Up the External Axis
+(3) 预热外部轴
 
-The external axis should be warmed up to create an optimal tuning environment. The appropriate timing for tuning can be determined based on the encoder temperature. The checking method is as follows.
+外部轴应进行预热，以创建最佳调节环境。调节的合适时机可根据编码器温度确定。检查方法如下。
 
 ![](../_assets/enc_temp1_en.png)
 
-Figure 3.9 Checking encoder temperature during manual tuning of an external axis
+图 3.9 在手动调节外部轴时检查编码器温度
 
 
 ![](../_assets/enc_temp2_en.png)
 
-Figure 3.10 Checking encoder temperature during manual tuning of an external axis
+图 3.10 在手动调节外部轴时检查编码器温度
 
 
-(4) Finding the Oscillation Gain
+(4) 寻找振荡增益
 
-This is the process of finding the maximum gain value. The goal is to operate the robot using jog motion and identify the gain at which noise begins to occur.
+这是找到最大增益值的过程。目标是使用 jog 动作操作机器人，并识别噪声开始出现时的增益。
 
 
 ![](../_assets/max_kv_en.png)
 
-Figure 3.11 Finding the oscillation gain during manual tuning of an external axis
+图 3.11 在手动调节外部轴时寻找振荡增益
 
-Once the oscillation gain is found, reduce Kv by half and apply it. This value becomes the initial gain value.
-
-
-### Tuning Procedure
-
-(1) 6010.job Program (Setup Job File)
-
-* g_total_axis = Total number of axes configured in the controller
-* g_cmd_axis = External axis number to be tuned
-* g_start_angle = Start position for external axis tuning (Rotational axis: deg, Linear axis: mm)
-* g_end_angle = End position for external axis tuning (Rotational axis: deg, Linear axis: mm)
+一旦确定振荡增益，将 Kv 减半并应用。此值成为初始增益值。
 
 
-#### Example
+### 调节程序
+
+(1) 6010.job 程序 (设置作业文件)
+
+* g_total_axis = 在控制器中配置的总轴数
+* g_cmd_axis = 要调节的外部轴编号
+* g_start_angle = 外部轴调节的起始位置 (旋转轴：度，线性轴：毫米)
+* g_end_angle = 外部轴调节的结束位置 (旋转轴：度，线性轴：毫米)
+
+
+#### 示例
 
 ![](../_assets/6010_job_Window_en.png)
 
-Figure 3.12 6010.job screen
+图 3.12 6010.job 屏幕
 
 ![](../_assets/mechanism_window_en.png)
 
-Figure 3.13 External axis mechanism screen
+图 3.13 外部轴机制屏幕
 
 
-The total number of axes configured in the controller is 10 (6 robot axes + 4 external axes): g_total_axis = 10
+在控制器中配置的总轴数为 10 (6 个机器人轴 + 4 个外部轴)：g_total_axis = 10
 
-To tune External Axis 2 (a_2, jig): g_cmd_axis = 8 (6 robot axes + External Axis 2)
+要调节外部轴 2 (a_2, jig)：g_cmd_axis = 8 (6 个机器人轴 + 外部轴 2)
 
-Start/End position of External Axis 2 (a_2, jig): g_start_angle/g_end_angle should be set according to the soft limits and travel range. Here, it is configured to operate from -10 deg to 10 deg as an example.
+外部轴 2 (a_2, jig) 的起始/结束位置：g_start_angle/g_end_angle 应根据软限制和行程范围进行设置。这里配置为从 -10 度到 10 度操作为例。
 
-* Note: If the travel range is too short, torque ripple values may not be output at high speed.
+* 注意：如果行程范围过短，高速时可能无法输出扭矩涟漪值。
 
-(2) Running 6020.job (Main job file for actual tuning)
+(2) 运行 6020.job (实际调节的主作业文件)
 
-6020.job must be executed after setting the total number of axes (g_total_axis), the axis to be tuned (g_cmd_axis), and the motion range (g_start_angle/g_end_angle) in 6010.job.
+在 6010.job 中设置总轴数 (g_total_axis)、要调节的轴 (g_cmd_axis) 和运动范围 (g_start_angle/g_end_angle) 后，必须执行 6020.job。
 
-Run in 1Cycle mode at 100% playback speed.
+以 100% 回放速度在 1Cycle 模式下运行。
 
-When 6020.job is executed, it first checks the motion range at low speed.
+当执行 6020.job 时，首先以低速检查运动范围。
 
-After confirming the motion range, the program will stop due to a stop command within 6020.job. If there is no issue with the motion range, press Start to continue.
+确认运动范围后，程序将因 6020.job 中的停止命令而停止。如果运动范围没有问题，请按开始继续。
+
 <br> 
 
-(3) Checking Results (Screen: System → Axis Control Optimization → Torque Ripple Tuning)
+(3) 检查结果 (屏幕：系统 → 轴控制优化 → 扭矩涟漪调节)
 
 ![](../_assets/Trq_ripple_window_en.png)
 
-Figure 3.14 Torque Ripple screen configuration
+图 3.14 扭矩涟漪屏幕配置
 
-Note1. At lower speeds, the get holding time may take longer.
+注释1. 在较低速度下，获得保持时间可能会更长。
 
-Note2. If the state is ON on the screen, press the 'Single Initialization' button to turn it OFF, then press the 'Execute' button.
+注释2. 如果屏幕上的状态为 ON，请按下“单次初始化”按钮将其关闭，然后按下“执行”按钮。
 
 <br>
 
-The results can be checked as follows.
+结果可以如下检查。
 
 ![](../_assets/Trq_ripple_Data_result1_en.png)
 
-Figure 3.15 Result confirmation
+图 3.15 结果确认
 
 
-(4) Tuning Completion Criteria
+(4) 调节完成标准
 
-Torque ripple must not exceed 2% at any speed.
-Position deviation should be maintained around 100 or less.
-Noise and vibration must not occur.
-Increase Kv repeatedly until the torque ripple approaches 2%.
-Find the optimal Kv value that satisfies all of the above conditions simultaneously.<br>
+在任何速度下扭矩涟漪不得超过 2%。
+位置偏差应维持在 100 或更低。
+不得出现噪声和振动。
+反复增加 Kv，直到扭矩涟漪接近 2%。
+找到同时满足以上所有条件的最佳 Kv 值。<br>
 
 <br>
 
-(Reference) If noise or vibration occurs even when the torque ripple is below 2%, reduce Kv until noise and vibration no longer occur.
+(参考) 如果在扭矩涟漪低于 2% 时仍然出现噪声或振动，请减小 Kv，直到不再出现噪声和振动。

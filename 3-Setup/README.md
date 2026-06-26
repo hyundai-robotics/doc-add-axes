@@ -1,1 +1,1 @@
-﻿# 3. Setup for Robot Type and Additional Axis parameter
+﻿# 3. 机器人类型和附加轴参数设置

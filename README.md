@@ -1,1 +1,1 @@
-﻿# ${cont_model} Controller Operation Manual - Additional axes
+# ${cont_model} 控制器操作手册 - 额外轴

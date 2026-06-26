@@ -1,47 +1,47 @@
-﻿<script id="page-config" type="application/json">
+<script id="page-config" type="application/json">
 {
 	"permittedStrs": ["Hi6", "Hi7"]
 }
 </script>
 
-# 2. Presetting
+# 2. 预设
 
-* Check the components and materials to be connected.
-* Ensure that the pre-calculated data and selected additional axis information are prepared.
-(Reduction ratio, AMP specifications, motor specifications, maximum speed, acceleration time, etc.)
-* The combination of Servo board and AMP according to the number of additional axes is as follows.
+* 检查要连接的组件和材料。
+* 确保准备好预先计算的数据和选择的附加轴信息。
+(减速比、AMP规格、电动机规格、最高速度、加速度时间等。)
+* 根据附加轴的数量，伺服板和AMP的组合如下。
 
-  | Axis Configuration | BD/AMP Configuration |
+  | 轴配置 | BD/AMP配置 |
   | :------------------: | :-------------------: |
-    | 1 to 6 axes</br>(basically 6 axes) | 1 Servo board</br>1 AMP(6-axis type) |
-  | 7 to 8 axes</br>(basically 6 axes + 2 additional axes) | 1 Servo board</br>1 AMP(6-axis type)</br>1 to 2 AMPs(1-axis type) |
-  | 9 to 12 axes</br>(basically 6 axes + 6 additional axes) | 2 Servo boards</br> 2 AMP(6-axis type) |
-  | 13 to 16 axes</br>(basically 6 axes + 12 additional axes) | 2 Servo boards</br>2 AMP(6-axis type)</br>1 to 4 AMPs(1-axis type) |
+    | 1到6轴</br>(基本上是6轴) | 1个伺服板</br>1个AMP(6轴类型) |
+  | 7到8轴</br>(基本上是6轴 + 2个附加轴) | 1个伺服板</br>1个AMP(6轴类型)</br>1到2个AMP(1轴类型) |
+  | 9到12轴</br>(基本上是6轴 + 6个附加轴) | 2个伺服板</br> 2个AMP(6轴类型) |
+  | 13到16轴</br>(基本上是6轴 + 12个附加轴) | 2个伺服板</br>2个AMP(6轴类型)</br>1到4个AMP(1轴类型) |
 
 {% hint style="info" %}
- The servo boards for each controller are as follows:<br>
+ 每个控制器的伺服板如下：<br>
  (Hi6 : BD640, Hi7 : BD642)
 {% endhint %}  
 
 </br>
 
-* DIP switch settings for interface board (BD6H0) Based on the number of additional axes.(* Hi6 only)
+* 接口板的DIP开关设置 (BD6H0) 根据附加轴的数量.(* 仅限Hi6)
   <div align="left">
 
-  | Name | Purpose | Setting|
+  | 名称 | 目的 | 设置|
   | :------------------: | :-------------------: | :-------------------: |
-  | SW1 | Switch for configuring SSM1 (BD640 Board 1) | When SSM1 is connected: Switches 1/2/3/4 OFF </br> When SSM1 is disconnected: Switches 1/2/3/4 ON |
-  | SW2 | Switch for configuring SSM2 (BD640 Board 2) | When SSM2 is connected: Switches 1/2/3/4 OFF </br> When SSM2 is disconnected: Switches 1/2/3/4 ON |
-  | SW3 | Switch for configuring SSM3 (BD640 Board 3) | When SSM3 is connected: Switches 1/2/3/4 OFF </br> When SSM3 is disconnected: Switches 1/2/3/4 ON |
-  | SW4 | Switch for configuring SSM4 (BD640 Board 4) | When SSM4 is connected: Switches 1/2/3/4 OFF </br> When SSM4 is disconnected: Switches 1/2/3/4 ON |
+  | SW1 | 配置SSM1的开关 (BD640板 1) | 当SSM1连接时：开关1/2/3/4关闭 </br> 当SSM1断开时：开关1/2/3/4打开 |
+  | SW2 | 配置SSM2的开关 (BD640板 2) | 当SSM2连接时：开关1/2/3/4关闭 </br> 当SSM2断开时：开关1/2/3/4打开 |
+  | SW3 | 配置SSM3的开关 (BD640板 3) | 当SSM3连接时：开关1/2/3/4关闭 </br> 当SSM3断开时：开关1/2/3/4打开 |
+  | SW4 | 配置SSM4的开关 (BD640板 4) | 当SSM4连接时：开关1/2/3/4关闭 </br> 当SSM4断开时：开关1/2/3/4打开 |
 
 <p align="center">
   <img src="../_assets/2_1_dip_switch_example.jpg" width="500">
-  <em><p align="center">Figure 2.1 DIP switch example (SSM1 connected)</p></em>
+  <em><p align="center">图2.1 DIP开关示例 (SSM1已连接)</p></em>
 </p>
   </div>
 
 {% hint style="info" %}
-Each Servo board can control up to 8 axes, with two types of AMPs available (6-axis type and 1-axis type).
+每个伺服板最多可以控制8个轴，提供两种类型的AMP（6轴类型和1轴类型）。
 
 {% endhint %}

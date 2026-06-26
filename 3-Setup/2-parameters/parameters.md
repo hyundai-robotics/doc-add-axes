@@ -1,142 +1,142 @@
-﻿<script id="page-config" type="application/json">
+<script id="page-config" type="application/json">
 {
 	"permittedStrs": ["Hi6", "Hi7"]
 }
 </script>
 
-## 3.2 Additional Axis Parameter Setting
+## 3.2 附加轴参数设置
 
-(1) Check the `Additional axis parameter setting` screen as shown below.
+(1) 检查下面所示的 `附加轴参数设置 (Additional axis parameter setting)` 屏幕。
 
 <p align="center">
  <img src="../../_assets/addaxes.PNG" width="70%"></img>
- <em><p align="center">Figure 3.4 Additional Axis Parameter Setting</p></em>
+ <em><p align="center">图 3.4 附加轴参数设置</p></em>
 </p>
 
-(2) Configure the additional axis parameter.</br>
-(3) Press `[OK]` to complete setting.
+(2) 配置附加轴参数。</br>
+(3) 按 `[OK]` 完成设置。
 
 </br>
 
 ---
 
-**[Additional Axis Parameter]**
+**[附加轴参数]**
 
-(1) Axis specification
+(1) 轴规格
 
-* Select the type of additional axis form the following options:
-Base, Servogun, Positioner, Jig, Sealer
-* When determining the additional axis specification, follow the logical order:
-Base → Servogun→ Positioner → Jig → Sealer
+* 从以下选项中选择附加轴的类型：
+基座、伺服枪、定位器、夹具、密封器
+* 确定附加轴规格时，请遵循逻辑顺序：
+基座 → 伺服枪 → 定位器 → 夹具 → 密封器
 
-(2) Axis structure: Select the motion type and direction of the additional axis.
+(2) 轴结构：选择附加轴的运动类型和方向。
 
-* For linear base axes(moving axes):
-  * X-axis: Forward/Backward movement
-  * Y-axis: Left/Right movement
-  * Z-axis: Up/Down movement
-* If the base axis is not installed in the same direction as the robot coordinate system, select "Any" and do "Base axis calibration".
-* Like linear base axes, circular base axes can also be set to Rx/Ry/Rz or selected as "Any" and do "Base axis calibration".
-* For "Jig" or "Sealer", the control mode can be selected as either "position control" or "speed control". In speed control mode, the motor rotates according to the motor speed command.
-* For "Servogun", refer to the [Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/2-servo-gun-initial-setting/README?cont_model=${cont_model}).
-* For "Positioner", refer to the [Positioner Synchronization Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README?cont_model=${cont_model})
+* 对于线性基座轴（移动轴）：
+  * X轴：前/后移动
+  * Y轴：左/右移动
+  * Z轴：上/下移动
+* 如果基座轴的安装方向与机器人坐标系统不同，请选择“任何”并进行“基座轴校准”。
+* 像线性基座轴一样，圆形基座轴也可以设置为 Rx/Ry/Rz，或选择“任何”并进行“基座轴校准”。
+* 对于“夹具”或“密封器”，可以选择控制模式为“位置控制”或“速度控制”。在速度控制模式下，电机根据电机速度命令旋转。
+* 对于“伺服枪”，请参阅 [点焊功能手册](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/2-servo-gun-initial-setting/README?cont_model=${cont_model})。
+* 对于“定位器”，请参阅 [定位器同步功能手册](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/zh/README?cont_model=${cont_model})
 
-(3) Axis position:
+(3) 轴位置：
 
-* Allows the user to axis configuration of the additional axis.
+* 允许用户配置附加轴的轴。
 
 {% hint style="info" %}
- The servo boards for each controller are as follows:<br>
+ 每个控制器的伺服板如下：<br>
  (Hi6 : BD640, Hi7 : BD642)
 {% endhint %} 
 
-|Axis Position Information | Setting Value |
+|轴位置信息 | 设置值 |
 |---|---|
-| BD : '1'  | servo board number: 1~2  |
-| Axis : '7' | servo board #1 : 7~8 </br>servo board #2 : 1~8  |
+| BD : '1'  | 伺服板号码：1~2  |
+| 轴 : '7' | 伺服板 #1 : 7~8 </br>伺服板 #2 : 1~8  |
 
-* If set to '1', '7', the 7th axis on servo board #1 is selected.
+* 如果设置为 '1' 和 '7'，则在伺服板 #1 上选择第 7 轴。
 
-(4) Reduction Ratio:
+(4) 减速比：
 
-* Enter the movement amount of the additional axis per motor revolution.
-* For linear axes, enter the movement amount of the additional axis per motor revolution in mm.
-* For circular axes, enter the movement amount of the additional axis per motor revolution in deg.
-* The sign is determined based on the positive direction of the motor(the direction in which the encoder value increases).
-  * If the axis movement direction matches the increasing coordinate value of the additional axis, set it to "+".
-  * If the coordinate value decreases instead, set it to "-".
-* Refer to the example below for clarification.
-* Example 1: If a circular axis uses only a 1/100 reduction gear.
-  * Since the axis rotates 360 degrees for 100 motor revolutions,
-    * The reduction ratio is:
+* 输入每次电机旋转时附加轴的运动量。
+* 对于线性轴，输入每次电机旋转时附加轴的运动量（单位为 mm）。
+* 对于圆形轴，输入每次电机旋转时附加轴的运动量（单位为 deg）。
+* 符号根据电机的正方向决定（编码器值增加的方向）。
+  * 如果轴运动方向与附加轴的坐标值增加方向相符合，则设为“+”。
+  * 如果坐标值反而减小，则设为“-”。
+* 请参阅下面的示例以获得澄清。
+* 示例 1：如果圆形轴仅使用 1/100 的减速齿轮。
+  * 因为轴每 100 次电机旋转旋转 360 度，
+    * 减速比为：
       +360 / 100 [deg/rev]
-* Example 2: If a linear axis uses a 1/20 reduction gear and a rack and pinion with a PCD of 110mm,
-  * Since the axis moves 110xPhi=345.5749 [mm] for 20 motor revolutions,
-  * The reduction ratio is:
+* 示例 2：如果线性轴使用 1/20 的减速齿轮和 PCD 为 110mm 的齿轮齿条，
+  * 因为轴在 20 次电机旋转中移动 110xPhi=345.5749 [mm]，
+  * 减速比为：
     +3455749 / 200000 [mm/rev]
-* Example 3: If a linear axis uses a 1/5 reduction gear and a ball screw with a 5mm lead,
-  * Since the axis moves 5mm for 5motor revolutions,
-  * The reduction ratio is:
+* 示例 3：如果线性轴使用 1/5 的减速齿轮和传动螺杆，导程为 5mm，
+  * 因为轴在 5 次电机旋转中移动 5mm，
+  * 减速比为：
     +5 / 5 [mm/rev]
 
-(5) Soft limit:
+(5) 软限制：
 
-* Sets the effective operating range of additional axis
-* For linear axes, set in millimeters [mm].
-* For circular axes, set in degrees [deg].
-* The values are applied in `[System] - 3:Robot parameter - 3: Software limit`.
+* 设置附加轴的有效操作范围。
+* 对于线性轴，以毫米 [mm] 设置。
+* 对于圆形轴，以度 [deg] 设置。
+* 这些值在 `[System] - 3:机器人参数 - 3: 软件限制 ([System] - 3:Robot parameter - 3: Software limit)` 中应用。
 
-(6) AMP Specifications:
+(6) AMP 规格：
 
-* Select the AMP specifications to be used for the additional axis.
-* Choose the IPM symbol and enter the Hall Sensor specifications as a number between 0-9 to specify the AMP type. The AMP specification format is as follows:
+* 选择用于附加轴的 AMP 规格。
+* 选择 IPM 符号，并输入霍尔传感器规格，作为介于 0-9 之间的数字，以指定 AMP 类型。AMP 规格格式如下：
 
   <center>
 
-  |IPM Capacity | Description |
+  |IPM 容量 | 描述 |
   |:---:|:---:|
-  |(medium) L  | (IPM current rating) 150A, (Hall Sensor current rating) 4V/75A |
-  |(medium) X  | (IPM current rating) 100A, (Hall Sensor current rating) 4V/50A |
-  |(medium) Y  | (IPM current rating) 750A, (Hall Sensor current rating) 4V/50A |
-  |(medium) Z  | (IPM current rating) 50A, (Hall Sensor current rating) 4V/25A |
-  |(small) A  | (IPM current rating) 30A, (Hall Sensor current rating) 4V/15A |
-  |(small) D  | (IPM current rating) 10A, (Hall Sensor current rating) 4V/5A |
+  |(中) L  | (IPM 当前评级) 150A, (霍尔传感器当前评级) 4V/75A |
+  |(中) X  | (IPM 当前评级) 100A, (霍尔传感器当前评级) 4V/50A |
+  |(中) Y  | (IPM 当前评级) 750A, (霍尔传感器当前评级) 4V/50A |
+  |(中) Z  | (IPM 当前评级) 50A, (霍尔传感器当前评级) 4V/25A |
+  |(小) A  | (IPM 当前评级) 30A, (霍尔传感器当前评级) 4V/15A |
+  |(小) D  | (IPM 当前评级) 10A, (霍尔传感器当前评级) 4V/5A |
 
   </center>
 
-* The rated capacity is determined by the IPM symbol and hall Sensor symbol.
+* 额定容量由 IPM 符号和霍尔传感器符号决定。
 
   <center>
 
-  |AMP Model | Code | Hall Sensor Specification| Full Scale Current (Im) |
+  |AMP 型号 | 代码 | 霍尔传感器规格| 满量程电流 (Im) |
   |:---:|:---:|:---:|:---:|
-  |medium  | 0 | 4V/75A  |  140.62A|
-  |medium  | 1 | 4V/50A  |  93.75A |
-  |medium  | 2 | 4V/25A  |  46.87A |
-  |medium  | 3 | 4V/15A  |  28.12A |
-  |medium  | 4 | 4V/10A  |  18.75A |
-  |medium  | 5 | 4V/5A   |  9.37A  |
-  |small   | 3 | 4V/15A  |  27.27A |
-  |small   | 4 | 4V/10A  |  18.18A |
-  |small   | 5 | 4V/5A   |  9.19A  |
-  |small   | 6 | 4V/3A   |  5.45A  |
-  |small   | 7 | 4V/6A   |  10.91A |
-  |small   | 8 | 4V/2A   |  3.64A  |
-  |small   | 9 | 4V/1A   |  1.82A  |
+  |中  | 0 | 4V/75A  |  140.62A|
+  |中  | 1 | 4V/50A  |  93.75A |
+  |中  | 2 | 4V/25A  |  46.87A |
+  |中  | 3 | 4V/15A  |  28.12A |
+  |中  | 4 | 4V/10A  |  18.75A |
+  |中  | 5 | 4V/5A   |  9.37A  |
+  |小   | 3 | 4V/15A  |  27.27A |
+  |小   | 4 | 4V/10A  |  18.18A |
+  |小   | 5 | 4V/5A   |  9.19A  |
+  |小   | 6 | 4V/3A   |  5.45A  |
+  |小   | 7 | 4V/6A   |  10.91A |
+  |小   | 8 | 4V/2A   |  3.64A  |
+  |小   | 9 | 4V/1A   |  1.82A  |
 
 </center>
 
-(7) Motor Specifications:
+(7) 电机规格：
 
-* Select the motor specifications used for the additional axis.
-* First, choose the motor capacity, then select the motor specification.
-* If there are minor modifications to certain motor attributes, a revision number (rev) may be added to the motor model number. In such cases, it is recommended to select the latest motor version with the highest revision number.
-  * Example:
-    Among TSM3563N7020E731, TSM3563N7020E731_R1, and TSM3563N7020E731_R2, it is recommended to select TSM3563N7020E731_R2.
+* 选择用于附加轴的电机规格。
+* 首先选择电机容量，然后选择电机规格。
+* 如果某些电机属性有小的修改，可以在电机型号后添加修订号（rev）。在这种情况下，建议选择修订号最高的最新电机版本。
+  * 示例：
+    在 TSM3563N7020E731、TSM3563N7020E731_R1 和 TSM3563N7020E731_R2 中，建议选择 TSM3563N7020E731_R2。
 
-(8) Acceleration/Deceleration Parameters:
+(8) 加速度/减速度参数：
 
-* Set the maximum speed and acceleration time for the additional axis.
-* The values set here are applied in `[System] - 3: Robot parameter - 34: Accel and decel parameter`.
-* While the maximum speed of the additional axis can be specified by the user, it is limited by the motor's rated speed.
-* If vibration occurs during additional axis operation, the acceleration time should be adjusted accordingly.
+* 设置附加轴的最大速度和加速时间。
+* 此处设置的值在 `[System] - 3: 机器人参数 - 34: 加减速参数 ([System] - 3: Robot parameter - 34: Accel and decel parameter)` 中应用。
+* 虽然附加轴的最大速度可以由用户指定，但它受电机额定速度的限制。
+* 如果在附加轴操作过程中发生振动，应相应地调整加速时间。

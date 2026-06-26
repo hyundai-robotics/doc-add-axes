@@ -1,36 +1,36 @@
-﻿<script id="page-config" type="application/json">
+<script id="page-config" type="application/json">
 {
 	"permittedStrs": ["Hi6", "Hi7"]
 }
 </script>
 
-# 1. Introduction
+# 1. 引言
 
-This section explains the setup for additional axes except the basic robot axes.
+本节解释了除基本机器人轴之外的附加轴的设置。
 
 {% hint style="info" %}
- The servo boards for each controller are as follows:<br>
+ 每个控制器的伺服板如下：<br>
  (Hi6 : BD640, Hi7 : BD642)
 {% endhint %}  
 
 </br>
 
-### **[ Registration Procedure ]**
+### **[ 注册程序 ]**
 
-* Preparation Work  </br>
-(1) Prepare the main unit (robot + additional axes) and wire harness  </br>
-(2) Prepare the controller, one set of servo boards (required when applying additional axes of three or more), additional axis AMP, and signal cables  </br>
-(3) Additional Axis Parameter  </br>
-    Prepare the input data for the additional axis, including axis specifications, configuration, reduction ratio, motor, and AMP, in the format required for additional axis setting (refer to Section 3.2).  </br>
-(4) Additional Axis Acceleration/Deceleration Time  </br>
-Prepare the data needed to input the command acceleration/deceleration time for the additional axis (refer to Section 3.2). </br>
+* 准备工作  </br>
+(1) 准备主机（机器人 + 附加轴）和线束  </br>
+(2) 准备控制器、一套伺服板（在申请三个或更多的附加轴时需要）、附加轴AMP和信号电缆  </br>
+(3) 附加轴参数  </br>
+    准备附加轴的输入数据，包括轴规格、配置、减速比、电机和AMP，以适用于附加轴设置的格式（参考第3.2节）。  </br>
+(4) 附加轴加速/减速时间  </br>
+准备输入附加轴的指令加速/减速时间所需的数据（参考第3.2节）。 </br>
 
-* Registration of Robot Type and Additional Axis Parameter  </br>
-After connecting the wire harness between the main unit and the controller, initialize the system, select the robot type, enter the number of additional axes, and then input the additional axis parameters (Maximum controllable axes: 16, including the robot)  </br>
-* If the robot type and additional axis parameters have already been registered before shipment, this process can be skipped.  </br>
+* 机器人类型和附加轴参数的注册  </br>
+在主机和控制器之间连接线束后，初始化系统，选择机器人类型，输入附加轴数量，然后输入附加轴参数（最大可控轴数：16，包括机器人）  </br>
+* 如果机器人类型和附加轴参数在出厂前已注册，则可以跳过此过程。  </br>
 
-* Connection and Inspection  </br>
-Turn off the controller → Connect the necessary wires between the main unit and the controller → Turn on the controller → Set encoder calibration and the reference position (axis parameters) for the servo system.  </br>
+* 连接和检查  </br>
+关闭控制器 → 连接主机和控制器之间的必要电缆 → 打开控制器 → 设置伺服系统的编码器校准和参考位置（轴参数）。  </br>
 
-* Completion  </br>
-After configuring the additional axis operating environment, save the hi6_proj.json file to an external storage device (USB memory).
+* 完成  </br>
+配置附加轴操作环境后，将 hi6_proj.json 文件保存到外部存储设备（USB内存）。

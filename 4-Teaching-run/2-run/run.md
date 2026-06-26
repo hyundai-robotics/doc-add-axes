@@ -1,16 +1,16 @@
-﻿## 4.2 Run
+## 4.2 运行
 
-(1) Interpolation Off</br>
-Each axis reaches its target point simultaneously.
+(1) 插值关闭</br>
+每个轴同时到达其目标点。
 
-(2) Linear Interpolation</br>
-The robot tool center point(TCP) moves with linear interpolation, maintaining its trajectory and orientation.
+(2) 线性插值</br>
+机器人工具中心点(TCP)以线性插值移动，保持其轨迹和方向。
 
-* The base axis moves in synchronization with the robot to ensure linear interpolation of the TCP.
-* Other additional axes are not related to the robot TCP but reach their target points simultaneously.
+* 基座轴与机器人同步移动，以确保TCP的线性插值。
+* 其他附加轴与机器人TCP无关，但同时到达其目标点。
 
-(3) Circular Interpolation</br>
-The robot tool center point(TCP) moves with circular interpolation, maintaining its trajectory and orientation.
+(3) 圆形插值</br>
+机器人工具中心点(TCP)以圆形插值移动，保持其轨迹和方向。
 
-* The base axis moves in synchronization with the robot to ensure circular interpolation of the TCP.
-* Other additional axes are not related to the robot TCP, but reach their target positions simultaneously.
+* 基座轴与机器人同步移动，以确保TCP的圆形插值。
+* 其他附加轴与机器人TCP无关，但同时到达其目标位置。
