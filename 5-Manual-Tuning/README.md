@@ -10,6 +10,12 @@ This section describes the manual tuning of external axis servos.
 
 (2) When in Engineering Mode (R314), the manual tuning function for external axes is activated in the UI. 
 
+
+### Meaning of Tuning Parameters
+>(1) Kv: Virtual damping coefficient.
+- Increasing Kv reduces vibration and speed deviation, improving system stability. However, excessively high Kv may increase torque ripple and acoustic noise.
+- Decreasing Kv may reduce torque ripple and acoustic noise. However, if Kv is too low, vibration and speed deviation can increase, resulting in degraded control performance.
+
 ### Preparation
   
 (1) Engineering Mode (R314)
