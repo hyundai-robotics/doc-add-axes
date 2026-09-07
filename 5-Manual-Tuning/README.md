@@ -95,7 +95,7 @@ When 6020.job is executed, it first checks the motion range at low speed.
 After confirming the motion range, the program will stop due to a stop command within 6020.job. If there is no issue with the motion range, press Start to continue.
 <br> 
 
-(3) Checking Results (Screen: System → Axis Control Optimization → Torque Ripple Tuning)
+(3) Checking Results (Screen: System → 4: Application parameter → 9: Axis Control Optimization → 2: Torque Ripple Tuning)
 
 ![](../_assets/Trq_ripple_window_en.png)
 
